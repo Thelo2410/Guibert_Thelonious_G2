@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compte Nas Benas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(20, 20, 20);
+            color: rgb(255, 255, 255);
+            margin: 0rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.795);
+            margin-right: 10rem;
+        }        
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            justify-content: space-between;
+            background-color: rgb(14, 13, 13);
+            height: 10vh;
+            list-style: none;
+        }
+
+        .logos {
+            margin-left: 1%;
+        }
+
+        .logo-site {
+            margin: 10%;
+        }
+
+        .nav {
+            display: flex;
+            margin-right: 25%;
+            gap: 0.938rem;
+        }
+
+        .nav-link {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 0.875rem;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .account-page {
+            max-width: 50rem;
+            margin: 3.125rem auto;
+            padding: 1.25rem;
+        }
+
+        .account-info {
+            margin-bottom: 1.875rem;
+        }
+
+        .account-info h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.625rem;
+        }
+
+        .account-info p {
+            font-size: 1rem;
+            margin: 0.313rem 0rem;
+        }
+
+        .btn {
+            padding: 0.625rem 1.25rem;
+            background-color: rgb(229, 9, 20);
+            color: rgb(255, 255, 255);
+            border: none;
+            font-size: 0.875rem;
+            cursor: pointer;
+            border-radius: 0.313rem;
+        }
+
+        .btn:hover {
+            background-color: rgb(246, 18, 29);
+        }
+
+        .profile-section h2 {
+            font-size: 1.25rem;
+            margin-bottom: 0.625rem;
+        }
+
+        .profiles {
+            display: flex;
+            gap: 0.938rem;
+        }
+
+        .profile {
+            text-align: center;
+        }
+
+        .profile img {
+            width: 9.375rem;
+            height: 9.375rem;
+            border-radius: 0.313rem;
+            margin-bottom: 0.625rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1.25rem;
+            font-size: 1.563rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+        
+        <nav class="nav">
+                <li><a href="index.html">Acceuil </a></li>
+                <li><a href="page-films.html">Films </a></li>
+                <li><a href="page-series.html">Séries </a></li>
+        </nav>
+        
+        <nav class="logos">
+            <a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50"></a>
+        </nav>
+
+    </header>
+
+    <main class="account-page">
+        <section class="account-info">
+            <h1>Compte</h1>
+            <p class="account-email">Adresse e-mail : <strong>LeBoss@gmail.com</strong></p>
+            <p class="account-plan">Abonnement actuel : <strong>Premium Ultra HD</strong></p>
+            <button class="btn">Modifier l'abonnement</button>
+        </section>
+        <section class="profile-section">
+            <h2>Profils</h2>
+            <div class="profiles">
+                <div class="profile">
+                    <img src="Image/Icones/stan-lee.png" alt="Profil 1">
+                    <p>Le boss</p>
+                </div>
+                <div class="profile">
+                    <img src="Image/Icones/masque (1).png" alt="Profil 2">
+                    <p>Zac</p>
+                </div>
+                <div class="profile">
+                    <img src="Image/Icones/masque.png" alt="Profil 3">
+                    <p>La plus grande des folles</p>
+                </div>
+                <div class="profile">
+                    <img src="Image/Icones/masque (2).png" alt="Profil 4">
+                    <p>Le Daron</p>
+                </div>
+                <div class="profile">
+                    <img src="Image/Icones/super-heros.png" alt="Profil 5">
+                    <p>Pablo</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<footer class="footer">
+    <img src="Image/Capture d’écran 2024-11-13 à 18.00.32.png" width="100%" height="250" alt="Réseaux">
+    <p>&copy; 2024 Nas Benas. Tous droits réservés.</p>
+</footer>
+
+</html>

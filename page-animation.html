@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films d'Animation</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 40rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Films d'Animation</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Chihiro.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le voyage de Chiriro</div>
+            <div class="description-film">Au cours d'un voyage en voiture, la famille de Chihiro,10 ans, fait une halte dans un parc à thème qui semble abandonné. Ses parents découvrent des mets succulents dans un restaurant et commencent à manger. Ils se retrouvent alors transformés en cochons. Prise de panique, Chihiro s'enfuit et rencontre l'énigmatique Haku, qui lui explique le fonctionnement de l'univers dans lequel elle vient de pénétrer. Pour sauver ses parents, la fillette va devoir faire face à la terrible sorcière Yubaba.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Dragons.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Dragons</div>
+            <div class="description-film">Hiccup est un adolescent viking de l'île de Berk, où se battre avec des dragons est un mode de vie. Ses idées progressistes et son sens de l'humour étrange le tiennent à part des autres, malgré le fait que son père est le chef du clan.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Wall-E.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Wall-E</div>
+            <div class="description-film">Wall E, un petit robot, est le dernier être sur Terre ! 700 ans plus tôt, l'humanité a déserté notre planète en lui laissant le soin de nettoyer la Terre. Mais Wall E a développé un petit défaut technique : une forte personnalité ! Curieux et indiscret, il est surtout très seul. Sa vie va être bouleversée avec l'arrivée d'Eve, une petite robote. Wall E va tout mettre en uvre pour la séduire.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Chateau dans le Ciel.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Chateau dans le Ciel</div>
+            <div class="description-film">Retenue prisonnière par des pirates, la jeune Sheeta saute dans le vide pour leur échapper. Elle est sauvée par Pazu, un jeune pilote d'avion travaillant dans une cité minière. Les pirates les suivent.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Nausicaa1.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Nausicaa et la vallée du vent</div>
+            <div class="description-film">Dans le futur, après qu'un conflit apocalyptique ait dévasté une grande partie de l'écosystème mondial, les rares êtres humains survivants vivent dans des environnements semi-hospitaliers dispersés dans ce qui est devenu une jungle "toxique."
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Spider-Man.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Spider-Man New Generation</div>
+            <div class="description-film">Mordu par une araignée radioactive dans le métro, l'adolescent de Brooklyn, Miles Morales, développe des pouvoirs mystérieux qui le transforment en Spider-Man. Lorsqu'il rencontre Peter Parker, il découvre rapidement qu'il n'est pas le seul avec ces talents spéciaux.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Totorro.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Mon voisin Totorro</div>
+            <div class="description-film">Deux petites filles, Mei, quatre ans, et Satsuki, 10 ans, s'installent dans une grande maison à la campagne avec leur père pour se rapprocher de l'hôpital où séjourne leur mère.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Akira.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Akira</div>
+            <div class="description-film">Tetsuo, un adolescent ayant vécu une enfance difficile, est la victime d'expériences visant à développer les capacités psychiques qui dorment en chacun de nous. Ainsi doté d'une puissance que lui meme ne peut imaginer, Tetsuo décide de partir en guerre contre le monde qui l'a opprimé. Dès lors, Il se retrouve au coeur d'une légende populaire qui annonce le retour prochain d'Akira, un enfant aux pouvoirs extra-ordinaires censé délivrer Tokyo du chaos...
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Zootopie.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Zootopie</div>
+            <div class="description-film">Zootopia est une ville qui ne ressemble à aucune autre : seuls les animaux y habitent ! On y trouve des quartiers résidentiels élégants comme le très chic Sahara Square, et d'autres moins hospitaliers comme le glacial Tundratown. Dans cette incroyable métropole, chaque espèce animale cohabite avec les autres. Qu'on soit un immense éléphant ou une minuscule souris, tout le monde a sa place à Zootopia !
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Mononoké.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Princesse Mononoké</div>
+            <div class="description-film">Ashitaka, un jeune guerrier japonais, affronte un sanglier géant et furieux qui attaque son village. Il tue la bête, mais se retrouve atteint par un mal mystérieux. Sur le conseil des sages, il part vers l'Ouest, à la recherche de ce qui a transformé l'animal en démon. Au cours de son périple, il rencontre San, une jeune fille qui vit avec les loups. Ashitaka apprend que les humains sont à l'origine de tous ces maux, car ils détruisent la forêt, qu'ils exploitent pour alimenter leurs forges.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Géant de fer.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Géant de Fer</div>
+            <div class="description-film">Livré à lui-même, le petit Hogarth Hughes passe le plus clair de son temps devant le petit écran. Alors qu'il regarde une de ses émissions favorites, l'image se brouille subitement. Il s'aperçoit que l'antenne a été arrachée. Remontant la piste du coupable, il découvre, au milieu de la forêt voisine, une gigantesque créature métallique, prête à dévorer la centrale électrique.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Mr Jack.jpeg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'étrange Noël de Monsieur Jack</div>
+            <div class="description-film">Dans le futur, après qu'un conflit apocalyptique ait dévasté une grande partie de l'écosystème mondial, les rares êtres humains survivants vivent dans des environnements semi-hospitaliers dispersés dans ce qui est devenu une jungle "toxique."
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Les Indestructibles.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Les Indestructibles</div>
+            <div class="description-film">Bob Paar était jadis l'un des plus grands super-héros de la planète. Tout le monde connaissait Mr. Indestructible, le héros qui, chaque jour, sauvait des centaines de vies et combattait le mal. Aujourd'hui, Mr. Indestructible est un petit expert en assurances qui n'affronte plus que l'ennui et un tour de taille en constante augmentation.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Le Chateau Ambulant.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Chateau Ambulant</div>
+            <div class="description-film">Sophie, une orpheline de 18 ans, travaille dur dans la boutique de chapelier que lui a laissée son père. Un jour, en ville, elle croise Hauru, un magicien très séduisant, mais faible de caractère. Une sorcière, se méprenant sur leurs sentiments, change Sophie en une vieille femme de 90 ans.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Ratatouille.jpeg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Ratatouille</div>
+            <div class="description-film">Rémy n'est pas un jeune rat comme les autres. Il a un véritable don, celui de cuisiner, marier les saveurs, découvrir de nouveaux arômes et un rêve : devenir un grand chef et le premier rat de goût. Il est prêt à tout pour vivre sa passion, notamment venir s'installer avec sa famille sous les cuisines d'un des plus grands restaurants parisiens : celui d'Auguste Gusteau, la star des fourneaux.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Porco.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Porco Rosso</div>
+            <div class="description-film">En Italie, à la fin des années 20. Refusant de devenir un héros de la nation, Marco, un pilote hors pair, accepte volontairement de subir un mauvais sort qui le transforme en cochon. A la même période, bon nombre de pilotes désoeuvrés ont formé un gang de pirates de l'air, pour mieux pouvoir détrousser les riches vacanciers amateurs de croisières nautiques.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Le Roi Loin.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Roi Loin</div>
+            <div class="description-film">Un lionceau nommé Simba est exilé de son royaume après avoir été accusé d'être responsable de la mort de son père, Mufasa. Avec l'aide d'un étrange duo composé d'un suricate et d'un phacochère, il décide de reprendre ce qui lui revient de droit lorsqu'il apprend qu'il est destiné à être roi.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/KIKI.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Kiki la petite sorcière</div>
+            <div class="description-film">Comme toutes les sorcières qui atteignent l'âge de 13 ans, Kiki doit quitter ses parents et s'établir pendant un an dans une autre ville, en exerçant un métier lié à son état de sorcière. Dans la ville de Koriko, la jeune et espiègle Kiki, accompagnée de son chat noir Jiji et aux côtés de Osono, une gentille boulangère qui lui propose un emploi, va commencer une activité de livraison de colis en volant sur son balai.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Aladin.jpeg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Aladdin</div>
+            <div class="description-film">Le jeune et pauvre Aladdin vit avec son singe Abu dans les rues et est obligé de voler des aliments pour se nourrir. Un jour, il fait la connaissance de la princesse Jasmine, fille du Sultan, venue se promener incognito dans les quartiers populaires, à la recherche d'aventure. Entre les deux jeunes gens, le coup de foudre est immédiat. Mais ils sont rapidement rattrapés par les gardes du sultan.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Persepolis.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Persepolis</div>
+            <div class="description-film">Basé sur le roman graphique de Satrapi sur sa vie avant et après la révolution iranienne. Le film montre la transformation de Satrapi en une adolescente rebelle. Ce film aborde également les tensions politiques en Iran dans les années 70 et 80, avec des membres de sa famille qui seront détenus puis exécutés.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Mulan.jpeg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Mulan</div>
+            <div class="description-film">Mulan est une belle jeune fille qui vit dans un village chinois. Malgré son amour et son respect pour sa famille, son mépris des conventions l'éloigne des rôles dévolus aux filles devouées. Quand son pays est envahi par les Huns, Mulan, n'écoutant que son courage, s'engage à la place de son père dans le but de lui sauver la vie. Elle va devenir, avec l'aide d'un dragon en quète de réhabilitation, un guerrier hors du commun.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/1001.jpeg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">1001 pattes</div>
+            <div class="description-film">Tilt, fourmi quelque peu tête en l'air, détruit par inadvertance la récolte de la saison. La fourmilière est dans tous ses états. En effet cette bévue va rendre fou de rage le Borgne, méchant insecte qui chaque été fait main basse sur une partie de la récolte avec sa bande de sauterelles racketteuses. Tilt décide de quitter l'île pour recruter des mercenaires capables de chasser le Borgne.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Toy Story.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Toy Story</div>
+            <div class="description-film">Quand le jeune Andy quitte sa chambre, ses jouets se mettent à mener leur propre vie sous la houlette de son pantin préféré, Woody le cow-boy.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Nemo.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le monde de Némo</div>
+            <div class="description-film">Un poisson-clown du nom de Marin mène une existence paisible avec son fils unique, Nemo. Redoutant l'océan et ses risques imprévisibles, il fait de son mieux pour protéger son fils. Comme tous les petits poissons de son âge, celui-ci rêve pourtant d'explorer les mystérieux récifs. Lorsque Nemo disparaît, Marin devient malgré lui le héros d'une quête unique et palpitante. Le pauvre papa ignore que son rejeton à écailles a été emmené jusque dans l'aquarium d'un dentiste.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Royaume des chats.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Royaume des Chats</div>
+            <div class="description-film">Une lycéenne nommée Haru sauve un chat qui a été renversé par un camion. Le chat s'avère être le prince du royaume des chats, et Haru se voit offrir de nombreux cadeaux en échange de son heroïsme, y compris une demande en mariage.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Là-Haut.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Là-Haut</div>
+            <div class="description-film">Quand Carl, un grincheux de 78 ans, décide de réaliser le rêve de sa vie en attachant des milliers de ballons à sa maison pour s'envoler vers l'Amérique du Sud, il ne s'attendait pas à embarquer avec lui Russell, un jeune explorateur de neuf ans, toujours très enthousiaste et assez envahissant.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Le bossu de notre Dame.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Bossu de Notre-Dame</div>
+            <div class="description-film">À Paris, en 1482, le puissant juge Frollo poursuit de sa haine tous les bohémiens qui osent pénétrer dans la ville. Plusieurs années auparavant, il a recueilli le fils d'une gitane, un bébé bossu qu'il s'apprêtait à tuer. Baptisé Quasimodo, l'enfant est le sonneur des cloches de la cathédrale Notre-Dame que Frollo lui interdit de quitter.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Animation/Tarzan.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Tarzan</div>
+            <div class="description-film">Recueilli et adopté tout bébé par un clan de gorilles, Tarzan développe un instinct aussi sûr que celui des animaux sauvages. Ses aptitudes physiques et son intelligence lui permettent de prendre une place à part dans le royaume de la jungle. Quand il rencontre le professeur Porter et sa fille Jane, en expédition scientifique dans la jungle, Tarzan découvre qu'il existe d'autres êtres semblables à lui. Il devra bientôt faire un choix entre sa famille d'adoption et ses ascendances humaines.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer class="footer">
+    <img src="Image/Capture d’écran 2024-11-13 à 18.00.32.png" width="100%" height="250px" alt="Réseaux">
+    <p>&copy; 2024 Nas Benas. Tous droits réservés.</p>
+</footer>
+
+</html>

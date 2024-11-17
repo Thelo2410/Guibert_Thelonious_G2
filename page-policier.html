@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films Policier</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 40rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Films Policiers</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Le prestige.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Prestige</div>
+            <div class="description-film">Deux magiciens du 19e siècle s'engagent dans une lutte sans merci non seulement pour se surpasser l'un l'autre, mais pour détruire l'adversaire. L'un deux est accusé du meurtre de son rival qui s'est noyé au cours d'un tour de magie, après être tombé d'une trappe dans une cuve remplie d'eau et verrouillée, l'exécution du tour ayant apparemment mal tourné.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Jason Bourne.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Mémoire Dans La Peau</div>
+            <div class="description-film">Sur la côte adriatique, un bateau de pêche repère le corps inanimé d'un homme ballotté par les flots. Des marins s'empressent de le repêcher. Portant des traces de balles dans le dos, cet homme à l'identité inconnue a miraculeusement survécu. Cependant, il ne se souvient plus de rien, même pas de son nom ou des raisons pour lesquelles on a tenté de le tuer. Toutefois, un indice subsiste : de sa hanche est extraite une petite capsule holographique indiquant un numéro de compte à Zurich.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Inception.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Inception</div>
+            <div class="description-film">Dom Cobb est un voleur expérimenté dans l'art périlleux de l'extraction : sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l'univers trouble de l'espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier. Cependant, une ultime mission pourrait lui permettre de retrouver sa vie d'avant.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Reservoir Dogs.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Reservoir Dogs</div>
+            <div class="description-film">Six truands désignés par des noms de code entreprennent de dévaliser une importante bijouterie sous la direction du tyrannique Joe Cabot et de son fils Nice Guy Eddie. L'opération échoue malencontreusement et se solde par un bain de sang. Les malfrats se réfugient alors dans un entrepôt sordide. Mr Orange est grièvement blessé. Mr Pink, quant à lui, est d'avis qu'il existe un traître parmi eux. Mr Blonde, un psychopathe, entend bien faire parler le policier qu'il a réussi à capturer.</div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films/LA-HAINE.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">LA HAINE</div>
+            <div class="description-film">Une émeute éclate dans la cité des Muguets, à la suite d'une bavure policière. Au petit matin, trois copains se retrouvent.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Minority Report.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Minority Report</div>
+            <div class="description-film">En 2054, la société du futur a éradiqué les crimes en se dotant d'un système de prévention, de détection et de répression le plus sophistiqué du monde. Dissimulés de tous, trois extras-lucides transmettent les images des crimes à venir aux policiers de la Précrime. Cependant, un jour, John, le chef de brigade, reçoit l'impossible : sa propre image assassinant un inconnu. Démarre alors une course contre la montre pour prouver son innocence.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Inglorious Bastards.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Inglorious Bastards</div>
+            <div class="description-film">Dans la France occupée de 1940, Shosanna Dreyfus assiste à l'exécution de sa famille tombée entre les mains du colonel nazi Hans Landa. Shosanna s'échappe de justesse et s'enfuit à Paris où elle se construit une nouvelle identité en devenant exploitante d'une salle de cinéma. Quelque part ailleurs en Europe, le lieutenant Aldo Raine forme un groupe de soldats juifs américains pour mener des actions punitives particulièrement sanglantes contre les nazis.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Léon.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Léon</div>
+            <div class="description-film">Un tueur à gages répondant au nom de Léon prend sous son aile Mathilda, une petite fille de 12 ans, seule rescapée du massacre de sa famille. Bientôt, Léon va faire de Mathilda une `nettoyeuse', comme lui. La jeune fille pourra alors venger son petit frère.</div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Insaisissables.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Insaisissables</div>
+            <div class="description-film">Les Quatre Cavaliers, un groupe de brillants magiciens et illusionnistes, vient de donner deux spectacles de magie époustouflants : le premier en braquant une banque sur un autre continent, le deuxième en transférant la fortune d'un banquier véreux sur les comptes en banque du public. Deux agents spéciaux du FBI et d'Interpol sont déterminés à les arrêter avant qu'ils ne mettent à exécution leur promesse de réaliser des braquages encore plus audacieux.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/les-evades-affiche-francaise-1181187.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Les Evadés</div>
+            <div class="description-film">En 1947, Andy Dufresne, un jeune banquier, est condamné à la prison à vie pour le meurtre de sa femme et de son amant. Ayant beau clamer son innocence, il est emprisonné à `Shawshank', le pénitencier le plus sévère de l'Etat du Maine. Il y fait la rencontre de Red, un homme désabusé, détenu depuis 20 ans. Commence alors une grande histoire d'amitié entre les deux hommes.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Les Infiltrés.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Les Infiltrés</div>
+            <div class="description-film">Un policier de Boston, Billy Costigan, s'infiltre dans l'organisme criminel qui contrôle le sud de la ville, et gagne la confiance de son chef, Frank Costello, pendant qu'un criminel de carrière, Colin Sullivan, s'est infiltré et enquête, lui, sur les activités du département de police.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le pianiste.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Pianiste</div>
+            <div class="description-film">Programme campus Varsovie, au mois d'octobre 1939. un jeune pianiste juif, Wladyslaw Szpilman, est enfermé dans le ghetto avec sa famille. Il assiste, impuissant, aux humiliations que subissent quotidiennement les siens. Grâce à une aide extérieure, il échappe de justesse à la déportation mais voit partir toute sa famille. Le jeune homme se cache alors dans les maisons vides et observe passivement les derniers habitants se révolter contre l'occupation allemande.
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Drive.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Drive</div>
+            <div class="description-film">Un jeune homme solitaire, The Driver, conduit le jour à Hollywood pour le cinéma en tant que cascadeur et la nuit pour des truands. Ultra professionnel et peu bavard, il a son propre code de conduite. Jamais il n'a pris part aux crimes de ses employeurs autrement qu'en conduisant - et au volant, il est le meilleur !
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/La_Ligne_Verte.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Ligne Verte</div>
+            <div class="description-film">Paul Edgecomb, pensionnaire centenaire d'une maison de retraite, est hanté par ses souvenirs. Gardien-chef du pénitencier de Cold Mountain, en 1935, en Louisiane, il était chargé de veiller au bon déroulement des exécutions capitales au bloc E (la ligne verte) en s'efforçant d'adoucir les derniers moments des condamnés. Parmi eux se trouvait un colosse du nom de John Coffey, accusé du viol et du meurtre de deux fillettes.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/LA-HAINE.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">LA HAINE</div>
+            <div class="description-film">Une émeute éclate dans la cité des Muguets, à la suite d'une bavure policière. Au petit matin, trois copains se retrouvent.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/La cité des enfants perdus.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Cité des Enfants Perdus</div>
+            <div class="description-film">Krank, un étrange personnage vit entouré de clones et d'autres personnages encore plus étranges sur une plate-forme en mer perdue dans le brouillard. Krank, doit, pour ne pas vieillir trop vite, voler les rêves des enfants. C'est pour cela qu'il les enléve de la cité portuaire.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Die Hard.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Die Hard 3</div>
+            <div class="description-film">Le lieutenant John McClane est de retour et il est demandé en personne par un terroriste, Simon, qui menace New York. Alors qu'il fait équipe avec Zeus, un commerçant du quartier d'Harlem embarqué dans l'aventure malgré lui, McLane se livre à un petit jeu à travers toute la ville, devant résoudre des énigmes. S'il rate son coup, une bombe explose, c'est la règle imposée par Simon.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/fight-club-affiche-1079106.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Fight Club</div>
+            <div class="description-film">Pourvu d'une situation des plus enviable, un jeune homme à bout de nerfs retrouve un équilibre relatif en compagnie de Marla, rencontrée dans un groupe d'entraide. Il fait également la connaissance de Tyler Durden, personnage enthousiaste et charismatique.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Burn Out.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Burn Out</div>
+            <div class="description-film">Tête brûlée, accro aux sensations fortes, Tony ne vit que pour une seule chose : devenir pilote professionnel de moto superbike. Jusqu'au jour où il découvre que la mère de son fils est liée à la pègre manouche. Seule issue pour la sortir de cet engrenage : mettre ses talents au service des truands. Pilote de circuit le jour, go-faster la nuit, Tony est plongé dans une spirale infernale qui le mène au bord de la rupture.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Scarface.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Scarface</div>
+            <div class="description-film">En mai 1980, Fidel Castro autorise les opposants qui le souhaitent à quitter Cuba. Il en profite pour envoyer vers les États-Unis les malfrats devenus indésirables dans l'île. C'est ainsi que Tony Montana, un tueur mégalomane, se met à vivre son rêve américain. En deux temps, trois mouvements, il devient le bras droit de Frank Lopez, un magnat de la drogue, qu'il ne tarde pas à éliminer. Ainsi propulsé patron, il épouse au passage la veuve de sa victime.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Seven.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Seven</div>
+            <div class="description-film">Peu avant sa retraite, l'inspecteur William Somerset, un flic désabusé, est chargé de faire équipe avec un jeune idéaliste, David Mills. Ils enquêtent tout d'abord sur le meurtre d'un homme obèse que son assassin a obligé à manger jusqu'à ce que mort s'ensuive. L'enquête vient à peine de commencer qu'un deuxième crime, tout aussi macabre, est commis, puis un troisième. Petit à petit, les deux policiers font le lien entre tous ces assassinats.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Training Day.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Training Day</div>
+            <div class="description-film">Jake Hoyt, un jeune bleu idéaliste et naïf, a rallié la police de Los Angeles dans l'espoir de servir la justice. Décidé à passer inspecteur, il sollicite une mise à l'essai de vingt-quatre heures auprès du sergent chef Alonzo Harris, un vétéran de la lutte antidrogue qui opère depuis une douzaine d'années dans les quartiers les plus durs de la ville.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/The Usual Suspects.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Usual Suspects</div>
+            <div class="description-film">Interrogé par la police à la suite de l'explosion criminelle d'un cargo, Verbal Kint se met à table : avec quatre autres gangsters, il s'est vu imposer une mission périlleuse par Keyser Söze, un malfrat craint de tous mais que personne ne connaît. Qui est ce mystérieux commanditaire ? Existe-t-il vraiment ? Bryan Singer nous entraîne dans les méandres d'un scénario éblouissant, multipliant les fausses pistes jusqu'au dénouement final.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le 5e élément.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Cinquieme Elément</div>
+            <div class="description-film">Egypte, 1914. Des extraterrestres récupèrent quatre pierres magiques, symboles des quatre éléments, jadis confiées à des prêtres. Avant de partir, les extraterrestres promettent que dans 300 ans, ils rapporteront les précieux cailloux. Au XXIIIe siècle, alors qu'ils font route vers la Terre, ils sont anéantis par la planète du Mal. Les habitants de ce monde maléfique, les Mangalores, s'emparent des pierres et foncent vers la Terre.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/l_arme_fatale.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'Arme fatale</div>
+            <div class="description-film">Robert Murtaugh, policier noir quinquagénaire, marié et père de famille, compte bien atteindre paisiblement la retraite. Mais voici qu'on lui confie comme coéquipier Riggs, un jeune flic suicidaire qui vient de perdre sa femme et manie son arme comme un cow-boy. L'un et l'autre, anciens du Vietnam, vont s'opposer à un gang de trafiquants de drogue dirigé par une organisation fasciste...
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Heat.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Heat</div>
+            <div class="description-film">La bande de Neil McCauley à laquelle est venu se greffer Waingro, une nouvelle recrue, attaque un fourgon blindé pour s'emparer d'une somme importante en obligations. Cependant, ce dernier tue froidement l'un des convoyeurs et Chris Shiherlis se retrouve obligé de terminer le travail.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Inside Man.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Inside Man</div>
+            <div class="description-film">Sous les traits de peintres en bâtiment, des braqueurs s'attaquent à la prestigieuse Manhattan Trust Bank. Ils prennent en otages toutes les personnes présentes sur les lieux et les contraignent à revêtir la même combinaison qu'eux. Un coffre intéresse tout particulièrement le cerveau de l'opération. Dehors, la police décide de déployer un impressionnant dispositif de sécurité pour appréhender les voleurs.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Shutter Island.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Shutter Island</div>
+            <div class="description-film">En 1954, une meurtrière, extrêmement dangereuse, placée en centre de détention psychiatrique disparaît sur l'île de Shutter Island. Deux officiers du corps fédéral des marshals, Teddy Daniels et Chuck Aule, sont envoyés sur place pour enquêter. Très vite, Teddy Daniels comprend que le personnel de l'établissement cache quelque chose. Seul indice dont il dispose : un bout de papier sur lequel est griffonnée une suite de chiffres entrecoupée de lettres.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

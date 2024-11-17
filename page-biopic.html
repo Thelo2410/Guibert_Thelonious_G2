@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films Biopics</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 41.5rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Films Biopics</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/MJ.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Last Dance</div>
+            <div class="description-film">A travers des images d'archives inédites, cette série documentaire suit de l'intérieur la saison 1997-1998 des Chicago Bulls en route vers leur sixième titre en huit ans, et propose un portrait sportif et intime de Michael Jordan.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Tyson.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Tyson</div>
+            <div class="description-film">A travers des images d'archives et son témoignage, Mike Tyson retrace sa carrière. De ses premiers souvenirs d'enfance jusqu'à ses dilemmes actuels, l'athlète controversé revient sur son enfance difficile et son ascension professionnelle qui fera de lui le plus grand champion poids lourds de l'Histoire de la boxe.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/le_regard_de_charles.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Regard de Charles</div>
+            <div class="description-film">Jusqu'à récemment, peu de gens connaissaient la passion de filmer de Charles Aznavour : il emportait toujours une caméra avec lui, se filmant lui-même, ses proches, ainsi que d'autres artistes. La bande sonore est issue d'enregistrements originaux captés entre les années 1950 et 2018. Les spectateurs retrouveront les grands succès du chanteur et découvriront aussi des chansons beaucoup moins connues.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/CR7.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Ronaldo</div>
+            <div class="description-film">Ce film retrace l'ascension de l'un des meilleurs footballeurs du monde et le montre dans ses moments les plus intimes, notamment avec son fils et sa mère. Au travers de témoignages et d'images d'archives encore jamais diffusées, entrez dans l'intimité de la légende portugaise.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Maradona.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Maradona</div>
+            <div class="description-film">Le 5 juillet 1984, Diego Maradona arrivait à Naples pour un montant établissant un nouveau record. Pendant sept ans, il enflamme les stades. Sur le terrain, il était un génie. En dehors du terrain, il était considéré comme un dieu. Il a mené le SCC Napoli en tête du tableau pour la première fois de son histoire. Néanmoins, le prix à payer était élevé et des heures plus sombres ont fini par succéder à ces années fastes.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/SLY.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">SLY</div>
+            <div class="description-film">De Rocky à Rambo en passant par Judge Dredd, Stallone a marqué les esprits avec divers rôles légendaires. Dans ce documentaire, il révèle les doutes qui ont hanté sa carrière, ses regrets mais aussi ce qu'être une star du cinéma coûte réellement.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/La conquete.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Conquête</div>
+            <div class="description-film">6 mai 2007, second tour de l'élection présidentielle. Alors que les Français s'apprêtent à élire leur nouveau Président, Nicolas Sarkozy, sûr de sa victoire, reste cloîtré chez lui, en peignoir, sombre et abattu. Toute la journée, il cherche à joindre Cécilia, son épouse, qui le fuit.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Odyssée.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'Odyssée</div>
+            <div class="description-film">En 1948, Jacques-Yves Cousteau, sa femme, et ses deux fils vivent au paradis, dans une jolie maison surplombant la mer Méditerranée. Cependant, Cousteau ne rêve que d'aventure. Grâce à son invention, un scaphandre autonome qui permet de respirer sous l'eau, il a découvert un nouveau monde.
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Amy.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">AMY</div>
+            <div class="description-film">Asif Kapadia s'est plongé dans l'oeuvre de cette incroyable chanteuse, récompensée par six Grammy Awards, avant de recueillir le témoignage de ses proches : ses copines d'enfance, sa famille, son producteur, Mark Ronson, le chanteur Pete Doherty et aussi son ex-mari, Blake Fielder. En explorant les archives visuelles, il a notamment déniché des vidéos inédites, comme ces instants volés par le caméscope familial.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Sugar.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Sugar Man</div>
+            <div class="description-film">Au début des années 70, Sixto Rodriguez enregistre deux albums sur une marque de disque de Motown. C'est un échec, à tel point qu'on raconte qu'il se serait suicidé sur scène. Plus personne n'a entendu parler de Rodriguez.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/SEnna.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">SENNA</div>
+            <div class="description-film">Considéré comme le meilleur de sa discipline, Ayrton Senna est un pilote brésilien de légende. Ce film retrace son parcours en Formule 1, sa quête de perfection, et son irrésistible ascension jusqu'au statut de mythe, suite à un accident mortel lors du grand Prix de Saint-Marin, sur le circuit d'Imola en 1994.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Victoire.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Couleur de la Victoire</div>
+            <div class="description-film">Jesse Owens est un jeune athlète provenant d'un milieu défavorisé qui est recruté par une grande université, puis pris sous l'aile de l'entraîneur Larry Sneider. Jesse domine rapidement le circuit des compétitions nationales et devient l'un des meilleurs sprinteurs des États-Unis.
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Beauté.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Toute la Beauté et le Sang Versé</div>
+            <div class="description-film">Des films et des interviews illustrent la vie et le travail de la photographe et activiste Nan Goldin. Elle a récemment mené une lutte victorieuse contre l'entreprise Purdue Pharma, accusée d'être responsable de l'épidémie d'opioïdes aux États-Unis. Divers musées ont finalement mis fin à leur collaboration suite à des protestations et, en octobre 2020, Purdue Pharma a été condamnée à des amendes de plusieurs milliards de dollars.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Blue.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Little Girl Blue</div>
+            <div class="description-film">À la mort de sa mère, Mona Achache découvre des milliers de photos, de lettres et d'enregistrements, mais ces secrets enfouis résistent à l'énigme de sa disparition. Alors, par la puissance du cinéma et la grâce de l'incarnation, elle décide de la ressusciter pour rejouer sa vie et la comprendre.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Schumi.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Schumacher</div>
+            <div class="description-film">À travers des entretiens exclusifs et des images d'archives, ce documentaire dresse un portrait intimiste du septuple champion de Formule1 Michael Schumacher.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Terreur.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'avocat de la Terreur</div>
+            <div class="description-film">La vie et la carrière de l'avocat controversé, Jacques Vergès, qui s'est rendu célèbre en défendant le boucher nazi Klaus Barbie et de nombreux terroristes.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Andy.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Velvet Underground</div>
+            <div class="description-film">Découverte du parcours du groupe de rock légendaire et son héritage. Entre archives rares et interviews exclusives, Todd Haynes dévoile un véritable kaléidoscope digne de l'avant-gardisme de l'époque.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Still.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">STILL</div>
+            <div class="description-film">Entre nostalgie et cinéma et avec des images d'archives, le documentaire s'intéresse à l'histoire de Michael J. Fox et retrace sont combat contre la maladie de Parkinson, dont il est atteint depuis l'âge de 29 ans.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Suspendue.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Mort Suspendue</div>
+            <div class="description-film">En 1985, les alpinistes britanniques Joe Simpson et Simon Yates tentent d'atteindre les sommets des Andes.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Biopics/Grizzly.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Grizzly Man</div>
+            <div class="description-film">Timothy Treadwell a passé 13 étés, sans armes, près des grizzlys dans le `Katmai National Park and Preserve' en Alaska. Lors des 5 dernières expéditions, il a filmé les ours et s'est mis en scène à leurs côtés ; il a réalisé des films de sensibilisation servant à illustrer ses interventions et sur la nécessité de protéger les ours sauvages. En 2003, à la fin de la treizième expédition, Treadwell et sa compagne, Amie Huguenard, ont été attaqués et dévorés par un grizzly.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer class="footer">
+    <img src="Image/Capture d’écran 2024-11-13 à 18.00.32.png" width="100%" height="250px" alt="Réseaux">
+    <p>&copy; 2024 Nas Benas. Tous droits réservés.</p>
+</footer>
+
+</html>

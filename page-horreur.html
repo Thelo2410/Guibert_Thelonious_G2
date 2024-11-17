@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films d'Horreur</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 43rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Films d'Horreur</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Films/The Shining.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Shinig</div>
+            <div class="description-film">Jack Torrance, gardien d'un hôtel fermé l'hiver, sa femme et son fils Danny s'apprêtent à vivre de longs mois de solitude. Danny, qui possède un don de médium, le Shining, est effrayé à l'idée d'habiter ce lieu, théâtre marqué par de terribles évènements passés...
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le silence des agneaux.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Silence des Agneaux</div>
+            <div class="description-film">Un psychopathe connu sous le nom de `Buffalo Bill' sème la terreur dans le `Middle West' en kidnappant et en assassinant de jeunes femmes. Clarice Starling, une jeune agent du FBI, est chargée d'interroger l'ex-psychiatre Hannibal Lecter. Psychopathe redoutablement intelligent et porté sur le cannibalisme, Lecter est capable de lui fournir des informations. Entre eux s'établit un lien de fascination et de répulsion.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Requiem 1.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Requiem for a Dream</div>
+            <div class="description-film">Harry Goldfarb est un toxicomane. Il passe ses journées en compagnie de sa petite amie Marion et de son copain Tyrone. La mère d'Harry, Sara, souffre d'une autre forme de dépendance: la télévision.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/The Host.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Host</div>
+            <div class="description-film">A Séoul, au bord du fleuve Han, les Park tiennent un petit snack qui permet à Hie-bong, le patriarche, de subvenir aux besoins de sa famille : Kang-du, son fils aîné lymphatique, Nam-joo, sa fille championne malheureuse de tir à l'arc, Nam-il, son fils cadet au chômage, et Hyun-seo, l'adorable fille de Kang-du. Leur quiétude est brusquement balayée le jour où un monstre aquatique, fruit de la pollution des eaux par l'armée américaine, surgit de la rivière et détruit tout sur son passage.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Hannibal.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Hannibal Lecter</div>
+            <div class="description-film">Dix ans après sa spectaculaire et sanglante évasion, Dr Hannibal Lecter coule désormais des jours heureux à Florence, dans le plus parfait anonymat. Une de ses anciennes victimes, le richissime Mason Verger, nourrit à son endroit un puissant désir de vengeance, depuis que Lecter l'a horriblement mutilé et défiguré.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Hallloween.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Halloween</div>
+            <div class="description-film">La nuit d'Halloween 1963. Le jeune Michael Myers se précipite dans la chambre de sa soeur aînée et la poignarde sauvagement. Après son geste, Michael se mure dans le silence et est interné dans un asile psychiatrique. Quinze ans plus tard, il s'échappe de l'hôpital et retourne sur les lieux de son crime. Il s'en prend alors aux adolescents de la ville.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Beetlejuice.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Beetlejuice</div>
+            <div class="description-film">Adam et Barbara Maitland connaissent un bonheur sans nuage dans leur jolie maison quand un accident de la route les expédie dans l'autre monde. Devenus fantômes, ils reviennent hanter leur demeure. Cependant, leur calme est bientôt troublé par l'arrivée des nouveaux propriétaires, une famille de bourgeois new-yorkais excentriques et bruyants. Adam et Barbara ont bien l'intention de les faire déguerpir.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Busan.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Dernier Train pour Busan</div>
+            <div class="description-film">Seok-woo, jeune homme d'affaires débordé, accepte de ramener sa fille Soo-an chez sa mère, dont il est séparé, à Busan. Ils embarquent dans un train, sans se douter que la ville qu'ils s'apprêtent à quitter vient d'être contaminée par un dangereux virus transformant la population en mort vivants. Le train finit par quitter la gare mais une femme contaminée est parvenue à grimper à bord. Elle menace à présent l'ensemble des voyageurs.
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Ring.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Rings</div>
+            <div class="description-film">Un jour, une cassette vous parvient. Sans étiquette ni marque distinctive. Semblable à des millions d'autres. Si la curiosité vous pousse à la visionner, vous serez rapidement subjugué par un enchaînement d'images troublantes, de visions cauchemardesques, un entrelacs d'obscurs et envoûtants symboles. Sitôt sorti de cette épreuve, votre téléphone sonnera et une voix surgie du néant vous informera que vous n'avez plus que sept jours à vivre.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Saw.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">SAW</div>
+            <div class="description-film">Deux hommes se réveillent enchaînés au mur d'une salle de bains. Ils ignorent où ils sont et ne se connaissent pas. Ils savent juste que l'un doit absolument tuer l'autre, sinon dans moins de huit heures, ils seront exécutés tous les deux. Voici l'une des situations imaginées par un machiavélique maître criminel qui impose à ses victimes des choix auxquels personne ne souhaite jamais être confronté un jour. Un détective est chargé de l'enquête.
+            </div>
+        </div>
+
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Psycho.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">American Psycho</div>
+            <div class="description-film">Au coeur des années Reagan, Patrick Bateman est un pur produit de la réussite américaine. Jeune, riche, il est un de ces golden boys qui triomphent à la bourse. Seul le nec plus ultra est digne de lui et il s'emploie à ne retrouver que des symboles qui lui renvoient une image de succès. Il accumule, avec une obsession maladive, les vêtements de luxe, les relations enviables. Son voeu le plus cher est de se fondre dans cette foule, de trouver sa place au milieu de ceux auxquels il s'identifie.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Exorsiste.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'Exorciste</div>
+            <div class="description-film">Chris McNeill, actrice de télévision, s'inquiète d'entendre de plus en plus fréquemment des bruits bizarres dans la chambre de sa fillette, Regan. Celle-ci se plaint d'avoir des difficultés à dormir à cause des mouvements spasmodiques qui ébranlent son lit.
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/1408.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Chambre 1408</div>
+            <div class="description-film">Bien qu'il soit un auteur réputé de romans d'épouvante, Mike Enslin n'a jamais cru aux fantômes et aux esprits. Pour lui, la vie après la mort n'est que pure invention, et il a passé suffisamment de temps dans des maisons hantées et des cimetières pour le vérifier. En travaillant sur son dernier ouvrage, il découvre l'existence d'une chambre, la 1408 du Dolphin Hotel, où se sont produites de nombreuses morts inexpliquées et souvent violentes. Enslin décide d'y passer une nuit.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Sleep.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Doctor Sleep</div>
+            <div class="description-film">Marqué de façon irrévocable par le traumatisme qu'il a enduré lorsqu'il était enfant à l'Overlook, Dan Torrance s'est battu pour trouver un semblant de paix, mais cette paix est brisée lorsqu'il rencontre Abra, une adolescente courageuse qui possède le même don extrasensoriel que lui.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Ca.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Ça</div>
+            <div class="description-film">À Derry, dans le Maine, sept gamins ayant du mal à s'intégrer se sont regroupés au sein du Club des Ratés. Rejetés par leurs camarades, ils sont les cibles favorites des gros durs de l'école. Ils ont aussi en commun d'avoir éprouvé leur plus grande terreur face à un terrible prédateur métamorphe qu'ils appellent Ça.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Scream.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Scream</div>
+            <div class="description-film">Casey Becker, une belle adolescente, est seule dans la maison familiale. Elle s'apprête à regarder un film d'horreur, mais le téléphone sonne.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Loups.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Pacte des Loups</div>
+            <div class="description-film">En 1766, le chevalier Grégoire de Fronsac, missionné par Louis XV, est envoyé dans le Gévaudan pour traquer et abattre une bête mystérieuse qui terrorise la région depuis deux ans, n'épargnant ni femmes ni enfants. Accompagné de Mani, son frère de sang, un indien Mohawk de la Nouvelle-France, Fronsac est rapidement confronté à l'hostilité des nobles de la région.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Get Out.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Get Out</div>
+            <div class="description-film">Maintenant que Chris et sa copine Rose vont rencontrer leurs parents respectifs, elle l'invite dans la résidence secondaire de sa famille pour un week-end. D'abord Chris comprend que le comportement un peu étrange de la famille de Rose est lié au fait qu'il est noir et qu'elle est blanche. Cependant, il découvre que la vérité est bien plus dérangeante.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/The Thing.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Thing</div>
+            <div class="description-film">Hiver 1982 au coeur de l'Antarctique. Une équipe de chercheurs composée de 12 hommes découvre un corps enfoui sous la neige depuis plus de 100 000 ans. Décongelée, la créature retourne à la vie en prenant la forme de celui qu'elle veut; dès lors, le soupçon s'installe entre les hommes de l'équipe.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Horreurs/Amityville.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Amityville</div>
+            <div class="description-film">Amityville, 13 novembre 1974. Dans une maison bourgeoise, un jeune homme, dans un accès de démence, massacre ses parents, ses frères et ses soeurs. Quelque temps plus tard, cette maison est mise en vente à un prix défiant toute concurrence. La famille Lutz l'achète sans connaître la tragédie qui s'y est déroulée.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

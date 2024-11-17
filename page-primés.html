@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films Primés</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 40rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li> 
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Films Primés</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Million.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Million Dollar Baby</div>
+            <div class="description-film">Frankie Dunn dirige un gymnase en décrépitude, secondée par son fidèle ami Eddie Dupris, un ancien boxeur depuis longtemps à la retraite. Malgré sa grande pauvreté, Maggie Fitzgerald, une pugiliste de 31 ans travaillant comme serveuse, tente de convaincre Frankie de devenir son entraîneur.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Le Parrain.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Parrain</div>
+            <div class="description-film">En 1945, à New York, les Corleone sont une des 5 familles de la mafia. Don Vito Corleone, `parrain' de cette famille, marie sa fille à un bookmaker. Sollozzo, `parrain' de la famille Tattaglia, propose à Don Vito une association dans le trafic de drogue, mais celui-ci refuse. Sonny, un de ses fils, y est quant à lui favorable. Afin de traiter avec Sonny, Sollozzo tente de faire tuer Don Vito, mais celui-ci en réchappe.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Taxi.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Taxi Driver</div>
+            <div class="description-film">Depuis son retour du Vietnam, Travis Bickle est contraint de prendre quantité de tranquillisants pour dormir. Il devient taxi de nuit, évoluant dans un New York où se mêlent délinquants, drogués et prostitués. Dans la journée, il écrit son journal dans lequel il se dit laid et incompris.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/12.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Twelve Years a Slave</div>
+            <div class="description-film">Homme noir libre, Salomon Northup vit paisiblement dans l'État de New York aux côtés de sa femme et de ses deux enfants. Un jour, il est approché par deux hommes dont il ne se méfie pas et qui le droguent. Enlevé, destitué de ses droits et de son identité, il est ensuite embarqué sous le nom de Plate dans un bateau en partance pour La Nouvelle-Orléans.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Blind.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Blind Side</div>
+            <div class="description-film">Michael, un adolescent issu d'un milieu défavorisé, est accueilli dans une école secondaire prestigieuse grâce à un entraîneur qui fait valoir les talents sportifs du jeune homme. Michael se lie d'amitié avec un petit garçon de son collège.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Arabie.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Laurence d'Arabie</div>
+            <div class="description-film">En 1916, un jeune officier britannique est chargé d'enquêter sur les révoltes arabes contre l'occupant turc. Plus tard surnommé "Lawrence d'Arabie", il se range du côté des insurgés et, dans les dunes éternelles du désert, organise une guérilla.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/The Revenant.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Revenant</div>
+            <div class="description-film">Durant une expédition dans une Amérique profondément sauvage, le légendaire trappeur Hugh Glass est brutalement attaqué par un ours et laissé pour mort par les membres de sa propre équipe. Dans sa quête de survie, Glass endure une souffrance inimaginable ainsi que la trahison de son homme de confiance, John Fitzgerald. Guidé par la volonté et l'amour de sa famille, Glass doit affronter un hiver brutal dans une inexorable lutte pour survivre et trouver la rédemption.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Oppenheimer.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Oppenheimer</div>
+            <div class="description-film">En 1942, convaincus que l'Allemagne nazie est en train de développer une arme nucléaire, les États-Unis initient, dans le plus grand secret, le Projet Manhattan destiné à mettre au point la première bombe atomique de l'histoire. Pour piloter ce dispositif, le gouvernement engage J.
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Tueras point.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Tu Ne Tueras Point</div>
+            <div class="description-film">1945. Alors que la guerre dans le Pacifique faisait rage et que les forces américaines menaient l'une des batailles les plus acharnées du conflit sur l'île d'Okinawa, un soldat s'est distingué. Desmond T.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/1917.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">1917</div>
+            <div class="description-film">Lorsque la Première Guerre mondiale frappe le monde, deux soldats britanniques, caporal suppléant Schofield et caporal suppléant Blake, reçoivent une mission qui leur semble impossible: ils doivent traverser le territoire ennemi pour délivrer un message.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Apocalypse.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Apocalypse Now</div>
+            <div class="description-film">Pendant la guerre du Vietnam, un agent de l'armée américaine s'aventure au Cambodge à la recherche d'un tyran dangereux, le colonel Kurtz, autrefois un soldat modèle qui s'est converti plus tard à la cause de l'ennemi.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Upon 1.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Once Upon a Time… in Hollywood</div>
+            <div class="description-film">Rick Dalton, un acteur de télévision qui a déjà vécu de meilleures années, et son cascadeur de longue date Cliff Booth s'efforcent d'atteindre la gloire et le succès dans l'industrie cinématographique au cours de l'âge d'or d'Hollywood en 1969.
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Le vent.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Autant en emporte le vent</div>
+            <div class="description-film">En Georgie, en 1861, Scarlett O'Hara est une jeune femme fière et volontaire de la haute société sudiste. Courtisée par tous les bons partis du pays, elle n'a d'yeux que pour Ashley Wilkes malgré ses fiançailles avec sa douce et timide cousine, Melanie Hamilton. Scarlett est pourtant bien décidée à le faire changer d'avis, mais à la réception des Douze Chênes c'est du cynique Rhett Butler qu'elle retient l'attention...
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Les Infiltrés.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Les Infiltrés</div>
+            <div class="description-film">Un policier de Boston, Billy Costigan, s'infiltre dans l'organisme criminel qui contrôle le sud de la ville, et gagne la confiance de son chef, Frank Costello, pendant qu'un criminel de carrière, Colin Sullivan, s'est infiltré et enquête, lui, sur les activités du département de police.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Gandhi.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Gandhi</div>
+            <div class="description-film">Fils de commerçants de Bombay, Mohandas Gandhi est attiré dès l'adolescence par les lumières de l'Occident. Selon les coutumes indiennes, il épouse, à 14 ans, Kasturbai, qui restera à ses côtés toute sa vie. En 1888, sa famille accepte qu'il parte étudier le droit à Cambridge.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Will.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Will Hunting</div>
+            <div class="description-film">Will Hunting est un authentique génie mais également un rebelle aux élans imprévisibles. Il est né dans le quartier populaire de South Boston et a arrêté très tôt ses études, refusant le brillant avenir que pouvait lui procurer son intelligence. Il vit désormais entouré d'une bande de copains et passe son temps dans les bars a chercher la bagarre. C'est alors que ses dons prodigieux en mathématiques attirent l'attention du professeur Lambeau, du Massachusetts Institute of Technology.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Dunkerque.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Dunkerque</div>
+            <div class="description-film">Au début de la Seconde Guerre mondiale, en mai 1940, des troupes alliées se retrouvent encerclées par les troupes allemandes à Dunkerque, en France. L'Opération Dynamo est mise en place pour évacuer le Corps expéditionnaire britannique (CEB) vers l'Angleterre.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Argo.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Argo</div>
+            <div class="description-film">Le 4 novembre 1979, au summum de la révolution iranienne, des militants envahissent l'ambassade américaine de Téhéran, et prennent 52 Américains en otage. Au milieu du chaos, six Américains réussissent à s'échapper et à se réfugier au domicile de l'ambassadeur canadien. Sachant qu'ils seront inévitablement découverts et probablement tués, un spécialiste de l'exfiltration de la CIA du nom de Tony Mendez monte un plan risqué visant à les faire sortir du pays.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/La Môme.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Môme</div>
+            <div class="description-film">Enfant, Édith commence à chanter avec son père, lui-même acrobate, lors d'une représentation. Sa voix captive l'audience. Pendant plusieurs années, elle continue de chanter dans les rues de Montmartre pour gagner sa vie. Puis elle fait la connaissance de Louis Leplée, patron d'un cabaret, qui lui propose de chanter dans son établissement. C'est aussi lui qui lui donnera le surnom de "la Môme". Commence alors pour Édith le début d'une longue carrière de Paris à New York.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Happyness.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Happyness Therapy</div>
+            <div class="description-film">Diagnostiqué bipolaire, Pat Solitano a tout perdu : sa maison, son travail d'enseignant et sa femme Nikki. Lorsqu'il sort de l'hôpital, il n'a d'autre choix que de retourner vivre chez ses parents. Pat est résolu à reprendre ses affaires en main et à ne voir que le bon côté des choses. Il mène la vie dure à sa mère, qu'il adore, et à son père, un amateur de football qui verse dans les paris clandestins.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Artiste.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Artist</div>
+            <div class="description-film">En 1929, l'acteur George Valentin est adoré par tous ses admirateurs; travaillant sur son dernier film, George tombe amoureux de la jeune Peppy Miller, cet amour est réciproque, mais George n'a pas ...
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/IMPITOYABLE.jpeg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Impitoyable</div>
+            <div class="description-film">Lorsqu'une prostituée du nom de Delilah Fitzgerald se retrouve défigurée à cause d'un duo de cowboys, ses compagnes décident d'offrir une récompense pour leur mort.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Lord Of Rings 3.1.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Seigneur des anneaux : Le Retour du roi</div>
+            <div class="description-film">Les armées de Sauron ont attaqué Minas Tirith, la capitale du Gondor. Jamais ce royaume autrefois puissant n'a eu autant besoin de son roi. Cependant, Aragorn trouvera-t-il en lui la volonté d'accomplir sa destinée ? Tandis que Gandalf s'efforce de soutenir les forces brisées de Gondor, Théoden exhorte les guerriers de Rohan à se joindre au combat. Cependant, malgré leur courage et leur loyauté, les forces des Hommes ne sont pas de taille à lutter contre les innombrables légions d'ennemis.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Capote.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Truman Capote</div>
+            <div class="description-film">Parti enquêter sur le meurtre de la famille Clutter pour son roman De sang-froid, l'écrivain Truman Capote joue avec le feu dans le Kansas.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Lincoln.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Lincoln</div>
+            <div class="description-film">Les derniers mois de la vie d'Abraham Lincoln, seizième président des États-Unis qui a été assassiné après la guerre de Sécession.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Book.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Green Book</div>
+            <div class="description-film">En 1962, alors que règne la ségrégation, Tony Lip, un videur italo-américain du Bronx, est engagé pour conduire et protéger le Dr Don Shirley, un pianiste noir de renommée mondiale, lors d'une tournée de concerts. Durant leur périple de Manhattan jusqu'au Sud profond, ils doivent se confronter aux humiliations, perceptions et persécutions, tout en devant trouver des établissements accueillant les personnes de couleurs.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Forrest.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Forrest Gump</div>
+            <div class="description-film">Sur un banc, à Savannah, en Géorgie, Forrest Gump attend le bus. Comme celui-ci tarde à venir, le jeune homme raconte sa vie à ses compagnons d'ennui. A priori, ses capacités intellectuelles plutôt limitées ne le destinaient pas à de grandes choses. Qu'importe.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le silence des agneaux.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Silence des Agneaux</div>
+            <div class="description-film">Un psychopathe connu sous le nom de `Buffalo Bill' sème la terreur dans le `Middle West' en kidnappant et en assassinant de jeunes femmes. Clarice Starling, une jeune agent du FBI, est chargée d'interroger l'ex-psychiatre Hannibal Lecter. Psychopathe redoutablement intelligent et porté sur le cannibalisme, Lecter est capable de lui fournir des informations. Entre eux s'établit un lien de fascination et de répulsion.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

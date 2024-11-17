@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films d'Actions</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 40rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Films d'Actions</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Avatar.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Avatar</div>
+            <div class="description-film">Jake Sully et Ney'tiri ont formé une famille et font tout pour rester aussi soudés que possible. Ils sont cependant contraints de quitter leur foyer et d'explorer les différentes régions encore mystérieuses de Pandora.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Batman.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Dark Knight</div>
+            <div class="description-film">Batman est plus que jamais déterminé à éradiquer le crime organisé qui sème la terreur en ville. Epaulé par le lieutenant Jim Gordon et par le procureur de Gotham City, Harvey Dent, Batman voit son champ d'action s'élargir. La collaboration des trois hommes s'avère très efficace et ne tarde pas à porter ses fruits jusqu'à ce qu'un criminel redoutable vienne plonger la ville de Gotham City dans le chaos.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Blade.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Blade</div>
+            <div class="description-film">Blade Eric n'est ni un homme ni un vampire, mais un hybride du Bien et du Mal, et ce depuis le jour de sa naissance, où sa mère fut mordue et y laissa la vie. Immortel, Blade a conservé la force des vampires, tout en éliminant leurs faiblesses. Avec l'aide de son ami Abraham Whistler, il tente, depuis longtemps déjà, de mettre la main sur celui qui a causé la perte de sa mère.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Reservoir Dogs.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Reservoir Dogs</div>
+            <div class="description-film">Six truands désignés par des noms de code entreprennent de dévaliser une importante bijouterie sous la direction du tyrannique Joe Cabot et de son fils Nice Guy Eddie. L'opération échoue malencontreusement et se solde par un bain de sang. Les malfrats se réfugient alors dans un entrepôt sordide. Mr Orange est grièvement blessé. Mr Pink, quant à lui, est d'avis qu'il existe un traître parmi eux. Mr Blonde, un psychopathe, entend bien faire parler le policier qu'il a réussi à capturer.</div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films/Matrix.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Matrix</div>
+            <div class="description-film">Programmeur anonyme dans un service administratif le jour, Thomas Anderson devient Neo la nuit venue. Sous ce pseudonyme, il est l'un des pirates les plus recherchés du cyber-espace. À cheval entre deux mondes, Neo est assailli par d'étranges songes et des messages cryptés provenant d'un certain Morpheus. Celui-ci l'exhorte à aller au-delà des apparences et à trouver la réponse à la question qui hante constamment ses pensées : qu'est-ce que la Matrice ?</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Burn Out.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Burn Out</div>
+            <div class="description-film">Tête brûlée, accro aux sensations fortes, Tony ne vit que pour une seule chose : devenir pilote professionnel de moto superbike. Jusqu'au jour où il découvre que la mère de son fils est liée à la pègre manouche. Seule issue pour la sortir de cet engrenage : mettre ses talents au service des truands. Pilote de circuit le jour, go-faster la nuit, Tony est plongé dans une spirale infernale qui le mène au bord de la rupture.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Die Hard.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Die Hard 3</div>
+            <div class="description-film">Le lieutenant John McClane est de retour et il est demandé en personne par un terroriste, Simon, qui menace New York. Alors qu'il fait équipe avec Zeus, un commerçant du quartier d'Harlem embarqué dans l'aventure malgré lui, McLane se livre à un petit jeu à travers toute la ville, devant résoudre des énigmes. S'il rate son coup, une bombe explose, c'est la règle imposée par Simon.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Léon.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Léon</div>
+            <div class="description-film">Un tueur à gages répondant au nom de Léon prend sous son aile Mathilda, une petite fille de 12 ans, seule rescapée du massacre de sa famille. Bientôt, Léon va faire de Mathilda une `nettoyeuse', comme lui. La jeune fille pourra alors venger son petit frère.</div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Free Guys.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Free Guys</div>
+            <div class="description-film">Un caissier de banque découvre qu'il est en réalité un personnage dans un jeu vidéo à monde ouvert et décide de devenir le héros de sa propre histoire, qu'il va réécrire par lui-même.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Insaisissables.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Insaisissables</div>
+            <div class="description-film">Les Quatre Cavaliers, un groupe de brillants magiciens et illusionnistes, vient de donner deux spectacles de magie époustouflants : le premier en braquant une banque sur un autre continent, le deuxième en transférant la fortune d'un banquier véreux sur les comptes en banque du public. Deux agents spéciaux du FBI et d'Interpol sont déterminés à les arrêter avant qu'ils ne mettent à exécution leur promesse de réaliser des braquages encore plus audacieux.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Man On Fire.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Man On Fire</div>
+            <div class="description-film">John W. Creasy, un ex-agent de la CIA devenu alcoolique, se fait engager comme garde du corps par Samuel Ramos, membre d'une famille bourgeoise de Mexico, afin d'empêcher un éventuel rapt de sa fille Pita. Les enlèvements sont en effet monnaie courante dans toute l'Amérique latine. Le garde du corps, au bord du suicide, exerce froidement son métier dans un premier temps, rejetant la fillette de neuf ans qui cherche en lui un ami.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Jason Bourne.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Mémoire Dans La Peau</div>
+            <div class="description-film">Sur la côte adriatique, un bateau de pêche repère le corps inanimé d'un homme ballotté par les flots. Des marins s'empressent de le repêcher. Portant des traces de balles dans le dos, cet homme à l'identité inconnue a miraculeusement survécu. Cependant, il ne se souvient plus de rien, même pas de son nom ou des raisons pour lesquelles on a tenté de le tuer. Toutefois, un indice subsiste : de sa hanche est extraite une petite capsule holographique indiquant un numéro de compte à Zurich.
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Le prestige.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Prestige</div>
+            <div class="description-film">Deux magiciens du 19e siècle s'engagent dans une lutte sans merci non seulement pour se surpasser l'un l'autre, mais pour détruire l'adversaire. L'un deux est accusé du meurtre de son rival qui s'est noyé au cours d'un tour de magie, après être tombé d'une trappe dans une cuve remplie d'eau et verrouillée, l'exécution du tour ayant apparemment mal tourné.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Real Steel.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Real Steel</div>
+            <div class="description-film">Dans un futur proche, la boxe a évolué pour devenir un sport high-tech. Charlie Kenton, un ancien boxeur, a perdu toute chance de remporter le championnat depuis que les humains ont été remplacés sur le ring par des robots d'acier de 900 kilos et de 2,40 m de haut. Lorsque Charlie touche le fond, il accepte à contrecoeur de faire équipe avec son fils Max, qu'il a perdu de vue depuis des années, pour construire et entraîner un champion.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Warrior.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Warrior</div>
+            <div class="description-film">Ancien Marine brisé, Tommy Conlon rentre au pays et demande à son père de le préparer pour un tournoi d'arts martiaux mixtes qui lui permettrait de gagner une fortune. Personne ne sait ce qu'il espère faire de cet argent. Le propre frère de Tommy, Brendan, décide lui aussi de s'engager dans la compétition pour essayer de sauver sa famille. Entre les deux frères, les années n'ont pas adouci les rancoeurs.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Man Of Steel.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Man Of Steel</div>
+            <div class="description-film">Lorsque Jor-El comprend que sa planète, Krypton, est au bord de l'annihilation, il décide d'envoyer son fils unique, Kal-El, sur la planète Terre dans le but de sauver sa race.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films/Gladiator.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Gladiator</div>
+            <div class="description-film">Le général romain Maximus est le plus fidèle soutien de l'empereur Marc Aurèle, qu'il a conduit de victoire en victoire. Jaloux du prestige de Maximus, et plus encore de l'amour que lui voue l'empereur, le fils de Marc Aurèle, Commode, s'arroge brutalement le pouvoir, puis ordonne l'arrestation du général et son exécution. Maximus échappe à ses assassins, mais ne peut empêcher le massacre de sa famille. Capturé par un marchand d'esclaves, il devient gladiateur et prépare sa vengeance.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/fight-club-affiche-1079106.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Fight Club</div>
+            <div class="description-film">Pourvu d'une situation des plus enviable, un jeune homme à bout de nerfs retrouve un équilibre relatif en compagnie de Marla, rencontrée dans un groupe d'entraide. Il fait également la connaissance de Tyler Durden, personnage enthousiaste et charismatique.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Time Out.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Time Out</div>
+            <div class="description-film">Bienvenue dans un monde où le temps a remplacé l'argent. Génétiquement modifiés, les hommes ne vieillissent plus après 25 ans. A partir de cet âge, il faut gagner du temps pour rester en vie. Alors que les riches, jeunes et beaux pour l'éternité, accumulent le temps par dizaines d'années, les autres mendient, volent et empruntent les quelques heures qui leur permettront d'échapper à la mort. Un homme, accusé à tort de meurtre, prend la fuite avec une otage qui deviendra son alliée.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Blade Runner.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Blade Runner</div>
+            <div class="description-film">En l'an 2019, un ex-policier devenu détective privé, Rick Deckard, est rappelé en service pour faire la chasse à des robots d'apparence humaine appelés "replicants." Deckard doit en éliminer quatre qui se cachent à Los Angeles.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Les Infiltrés.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Les Infiltrés</div>
+            <div class="description-film">Un policier de Boston, Billy Costigan, s'infiltre dans l'organisme criminel qui contrôle le sud de la ville, et gagne la confiance de son chef, Frank Costello, pendant qu'un criminel de carrière, Colin Sullivan, s'est infiltré et enquête, lui, sur les activités du département de police.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Hulk.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'incroyable Hulk</div>
+            <div class="description-film">Tapi dans les bas-fonds de Sao Paulo, Bruce Banner tente désespérément de percer le secret de la maladie qui l'afflige.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Inception.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Inception</div>
+            <div class="description-film">Dom Cobb est un voleur expérimenté dans l'art périlleux de l'extraction : sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l'univers trouble de l'espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier. Cependant, une ultime mission pourrait lui permettre de retrouver sa vie d'avant.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le 5e élément.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Cinquieme Elément</div>
+            <div class="description-film">Egypte, 1914. Des extraterrestres récupèrent quatre pierres magiques, symboles des quatre éléments, jadis confiées à des prêtres. Avant de partir, les extraterrestres promettent que dans 300 ans, ils rapporteront les précieux cailloux. Au XXIIIe siècle, alors qu'ils font route vers la Terre, ils sont anéantis par la planète du Mal. Les habitants de ce monde maléfique, les Mangalores, s'emparent des pierres et foncent vers la Terre.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Inglorious Bastards.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Inglorious Bastards</div>
+            <div class="description-film">Dans la France occupée de 1940, Shosanna Dreyfus assiste à l'exécution de sa famille tombée entre les mains du colonel nazi Hans Landa. Shosanna s'échappe de justesse et s'enfuit à Paris où elle se construit une nouvelle identité en devenant exploitante d'une salle de cinéma. Quelque part ailleurs en Europe, le lieutenant Aldo Raine forme un groupe de soldats juifs américains pour mener des actions punitives particulièrement sanglantes contre les nazis.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Kill Bill.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Kill Bill</div>
+            <div class="description-film">Au cours d'une cérémonie de mariage en plein désert, un commando fait irruption dans la chapelle et tire sur les convives. Laissée pour morte, la mariée enceinte retrouve ses esprits après un coma de quatre ans.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Minority Report.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Minority Report</div>
+            <div class="description-film">En 2054, la société du futur a éradiqué les crimes en se dotant d'un système de prévention, de détection et de répression le plus sophistiqué du monde. Dissimulés de tous, trois extras-lucides transmettent les images des crimes à venir aux policiers de la Précrime. Cependant, un jour, John, le chef de brigade, reçoit l'impossible : sa propre image assassinant un inconnu. Démarre alors une course contre la montre pour prouver son innocence.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Sin City.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Sin City</div>
+            <div class="description-film">Sin City est une ville infestée de criminels, de flics ripoux et de femmes fatales. Hartigan s'est juré de protéger Nancy, une strip-teaseuse qui l'a fait craquer. Marv, un marginal brutal mais philosophe, part en mission pour venger la mort de son unique véritable amour, Goldie. Dwight est l'amant secret de Shellie.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+
+<footer class="footer">
+    <img src="Image/Capture d’écran 2024-11-13 à 18.00.32.png" width="100%" height="250px" alt="Réseaux">
+    <p>&copy; 2024 Nas Benas. Tous droits réservés.</p>
+</footer>
+
+</html>

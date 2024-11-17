@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films de Science-fiction</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 42rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Films de Science-fiction</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Films S-F/ST4.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Star Wars V - L'Empire contre-attaque</div>
+            <div class="description-film">Malgré la destruction de l'Étoile noire, l'Empire maintient son emprise sur la galaxie, et poursuit sans relâche sa lutte contre l'Alliance rebelle. Basés sur la planète glacée de Hoth, les rebelles essuient un assaut des troupes impériales.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Atlas.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Cloud Atlas</div>
+            <div class="description-film">Des acteurs assument des rôles dans une épopée qui s'étend sur cinq siècles. Un voyageur réticent qui traverse le Pacifique en 1850; un musicien déshérité menant une vie précaire en Belgique; ...
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Player.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Ready Player One</div>
+            <div class="description-film">En 2045, la planète frôle le chaos et s'effondre, mais les gens trouvent du réconfort dans l'OASIS, un monde virtuel créé par James Halliday. Lorsque Halliday meurt, il promet son immense fortune à la première personne qui découvre un oeuf de Pâques numérique caché dans l'OASIS.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Interstellar.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Interstellar</div>
+            <div class="description-film">Dans un proche futur, la Terre est devenue hostile pour l'homme. Les tempêtes de sable sont fréquentes et il n'y a plus que le maïs qui peut être cultivé, en raison d'un sol trop aride. Cooper est un pilote, recyclé en agriculteur, qui vit avec son fils et sa fille dans la ferme familiale.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Dune.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Dune</div>
+            <div class="description-film">Paul Atreides, un jeune homme brillant et doué au destin plus grand que lui-même, doit se rendre sur la planète la plus dangereuse de l'univers afin d'assurer l'avenir de sa famille et de son peuple.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Inception.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Inception</div>
+            <div class="description-film">Dom Cobb est un voleur expérimenté dans l'art périlleux de l'extraction : sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l'univers trouble de l'espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier. Cependant, une ultime mission pourrait lui permettre de retrouver sa vie d'avant.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/2049.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Blade Runner 2049</div>
+            <div class="description-film">En 2049, la société est fragilisée par les nombreuses tensions entre les humains et leurs esclaves créés par bio-ingénierie. L'officier K est un blade runner: il fait partie d'une force d'intervention d'élite chargée de trouver et d'éliminer ceux qui n'obéissent pas aux ordres des humains.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Terre.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Jour où la Terre s'arrêta</div>
+            <div class="description-film">L'arrivée sur Terre de Klaatu, un extraterrestre d'apparence humaine, provoque de spectaculaires bouleversements. Tandis que les gouvernements et les scientifiques tentent désespérément de percer son mystère, une femme, le docteur Helen Benson, parvient à nouer un contact avec lui et à comprendre le sens de sa mission. Klaatu est là pour sauver la Terre avec ou sans les humains.
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Transcendance.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Transcendance</div>
+            <div class="description-film">Dans un futur proche, un groupe de scientifiques tente de concevoir le premier ordinateur doté d'une conscience et capable de réfléchir de manière autonome. Ils doivent faire face aux attaques de terroristes anti-technologies qui voient dans ce projet une menace pour l'espèce humaine. Lorsque le scientifique à la tête du projet est assassiné, sa femme se sert de l'avancée de ses travaux pour `transcender' son esprit dans le premier super ordinateur de l'histoire.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/code.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Source Code</div>
+            <div class="description-film">Colter Stevens se réveille en sursaut dans un train à destination de Chicago. Amnésique, il n'a aucun souvenir d'être monté dedans. Pire encore, les passagers du train se comportent avec lui avec familiarité, alors qu'il ne les a jamais vus. Désorienté, il cherche à comprendre ce qu'il se passe, mais une bombe explose, tuant tout le monde à bord.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/snowpiercer_le_transperceneige.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Snowpiercer</div>
+            <div class="description-film">À la suite d'une tentative ratée d'une entreprise de géo-ingénierie pour contrebalancer le réchauffement climatique en 2014, par envoi d'un gaz dans l'atmosphère, une glaciation de toute la planète extermine la vie sur terre, ainsi que presque toute l'humanité. Les survivants vivent désormais tous dans un train lancé à vive allure, Le Transperceneige, dirigé par Wilford, le créateur de celui-ci qui réside dans le wagon de tête.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Reminiscence.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Reminiscence</div>
+            <div class="description-film">Un détective privé de l'esprit sous le nom de Nick Bannister navigue les eaux troubles du passé lorsqu'il aide ses clients à retrouver leurs souvenirs effacés. Sa vie est bouleversée lorsque Mae devient sa cliente.
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/E-Robot.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">I, Robot</div>
+            <div class="description-film">L'action se déroule en 2035. Des robots sont pleinement intégrés à notre vie quotidienne, et tout le monde a confiance en eux, à l'exception d'un détective légèrement paranoïaque enquêtant sur un meurtre dont il est le seul à penser qu'il est l'uvre d'un robot. Cette enquête l'amènera à découvrir une bien plus terrifiante menace pour la race humaine.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Gravity.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Gravity</div>
+            <div class="description-film">En mission à bord de la navette Explorer, l'astronaute Matt Kowalski et la docteure Ryan Stone, experte en ingénierie médicale, sortent de l'appareil afin d'effectuer des réparations sur le télescope Hubble.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Matrix1.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Matrix</div>
+            <div class="description-film">Programmeur anonyme dans un service administratif le jour, Thomas Anderson devient Neo la nuit venue. Sous ce pseudonyme, il est l'un des pirates les plus recherchés du cyber-espace. À cheval entre deux mondes, Neo est assailli par d'étranges songes et des messages cryptés provenant d'un certain Morpheus. Celui-ci l'exhorte à aller au-delà des apparences et à trouver la réponse à la question qui hante constamment ses pensées : qu'est-ce que la Matrice ?
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Park.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Jurassic Park</div>
+            <div class="description-film">Ne pas réveiller le chat qui dort -- c'est ce que le milliardaire John Hammond aurait dû se rappeler avant de se lancer dans le clonage de dinosaures. C'est à partir d'une goutte de sang absorbée par un moustique fossilisé que John Hammond et son équipe ont réussi à faire renaître une dizaine d'espèces de dinosaures.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Dune 2.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Dune, Deuxième Partie</div>
+            <div class="description-film">Paul Atréides se rallie à Chani et aux Fremen tout en préparant sa revanche contre ceux qui ont détruit sa famille. Alors qu'il doit faire un choix entre l'amour de sa vie et le destin de la galaxie, il devra néanmoins tout faire pour empêcher un terrible futur que lui seul peut prédire.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Lucy.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Lucy</div>
+            <div class="description-film">Lucy Miller est une jeune femme vivant à Taipei (Taiwan), dans un monde où les humains n'utilisent que 10 pourcent des capacités de leur cerveau. Prise dans un guet-apens par la mafia coréenne, elle est contrainte de faire la mule pour des trafiquants de drogue qui insèrent un paquet de poudre bleue dans son ventre, le CPH4, produit de synthèse expérimental.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Independance Day.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Independance Day</div>
+            <div class="description-film">Une immense soucoupe volante envahit le ciel terrestre, libérant un nombre infini de plus petites soucoupes qui prennent position au-dessus des plus grandes villes du monde. Un informaticien new-yorkais décrypte les signaux émanant des étranges voyageurs. Ils ne sont pas du tout amicaux et ces extraterrestres se préparent à attaquer la Terre.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/BB.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'Étrange Histoire de Benjamin Button</div>
+            <div class="description-film">'Curieux destin que le mien'. Ainsi commence l'étrange histoire de Benjamin Button, cet homme qui naquit à 80 ans et vécut sa vie à l'envers, sans pouvoir arrêter le cours du temps. Situé à La Nouvelle-Orléans et adapté d'une nouvelle de F. Scott Fitzgerald, le film suit ses tribulations de 1918 à nos jours.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Warcraft.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Warcraft</div>
+            <div class="description-film">Le pacifique royaume d'Azeroth est au bord de la guerre alors que sa civilisation doit faire face à une redoutable race d'envahisseurs : des guerriers Orcs fuyant leur monde moribond pour en coloniser un autre. Alors qu'un portail s'ouvre pour connecter les deux mondes, une armée fait face à la destruction et l'autre à l'extinction. De côtés opposés, deux héros vont s'affronter et décider du sort de leur famille, de leur peuple et de leur patrie.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/John Carter.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">John Carter</div>
+            <div class="description-film">Le fascinant voyage de John Carter, qui se retrouve inexplicablement transporté sur Mars, au coeur d'une guerre mystérieuse entre les habitants de la planète. Parmi tous les êtres étranges qui peuplent cet univers, il fera la connaissance de Tars Tarkas et de la captivante princesse Dejah Thoris.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Mad Max.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Mad Max</div>
+            <div class="description-film">Au volant de son bolide, le "Cavalier de la nuit" sème la terreur sur une route des États-Unis. Une course-poursuite s'engage alors entre les représentants de la loi et le chauffard qui, après avoir provoqué des accidents dramatiques et spectaculaires, périt au volant de son véhicule.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Valerian.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Valérian et la Cité des mille planètes</div>
+            <div class="description-film">Au XXVIIIe siècle, Valérian et Laureline forment une équipe d'agents spatio-temporels chargés de maintenir l'ordre dans les territoires humains. Mandaté par le ministre de la Défense, le duo part en mission sur l'extraordinaire cité intergalactique Alpha.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Gemini Man.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Gemini Man</div>
+            <div class="description-film">Henry Brogan est un assassin d'élite âgé de 51 ans qui est prêt à prendre sa retraite après avoir terminé sa 72e mission, mais ses plans sont bouleversés lorsqu'il devient la cible d'un jeune agent mystérieux qui semble pouvoir prédire tous ses mouvements.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Terminator.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Terminator</div>
+            <div class="description-film">Un Terminator, robot d'aspect humain, est envoyé d'un futur où sa race livre aux hommes une guerre sans merci. Sa mission est de trouver et d'éliminer Sarah Connor avant qu'elle ne donne naissance à John, appelé à devenir le chef de la résistance. Cette dernière envoie un de ses membres, Reese, aux trousses du cyborg.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Don't.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Don't Look Up : Déni cosmique</div>
+            <div class="description-film">Persuadés qu'une météorite s'apprête à détruire la Terre, deux astronomes peu crédibles aux yeux de la population se lancent dans une tournée médiatique pour prévenir l'humanité de la probable et inévitable fin du monde.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films S-F/Adam.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Adam à Travers le Temps</div>
+            <div class="description-film">Après un atterrissage forcé en 2022, le pilote de chasse et voyageur dans le temps Adam Reed fait équipe avec une version de lui-même âgée de 12 ans pour sauver le futur.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

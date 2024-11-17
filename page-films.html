@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Films</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 40rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Liste de Films</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Films/Truman Show.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Truman Show</div>
+            <div class="description-film">Truman Burbank mène une vie calme et heureuse. Il habite dans un petit pavillon propret de la radieuse station balnéaire de Seahaven.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/titanic-affiche.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Titanic</div>
+            <div class="description-film">En 1997, l'épave du Titanic est l'objet d'une exploration fiévreuse, menée par des chercheurs de trésor en quête d'un diamant bleu qui se trouvait à bord. Frappée par un reportage télévisé, l'une des rescapées du naufrage, âgée de 102 ans, Rose DeWitt, se rend sur place et évoque ses souvenirs. 1912.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/the_mask.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Mask</div>
+            <div class="description-film">Stanley Ipkiss, modeste employé de banque, passionné par l'univers de Tex Avery, trouve un masque ancien aux pouvoirs surnaturels. Il est néanmoins partagé entre devenir cette créature verte sûre d'elle ou rester le timide Stanley Ipkiss, incapable d'aborder la magnifique chanteuse de cabaret Tina Carlyle.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Reservoir Dogs.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Reservoir Dogs</div>
+            <div class="description-film">Six truands désignés par des noms de code entreprennent de dévaliser une importante bijouterie sous la direction du tyrannique Joe Cabot et de son fils Nice Guy Eddie. L'opération échoue malencontreusement et se solde par un bain de sang. Les malfrats se réfugient alors dans un entrepôt sordide. Mr Orange est grièvement blessé. Mr Pink, quant à lui, est d'avis qu'il existe un traître parmi eux. Mr Blonde, un psychopathe, entend bien faire parler le policier qu'il a réussi à capturer.</div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films/Matrix.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Matrix</div>
+            <div class="description-film">Programmeur anonyme dans un service administratif le jour, Thomas Anderson devient Neo la nuit venue. Sous ce pseudonyme, il est l'un des pirates les plus recherchés du cyber-espace. À cheval entre deux mondes, Neo est assailli par d'étranges songes et des messages cryptés provenant d'un certain Morpheus. Celui-ci l'exhorte à aller au-delà des apparences et à trouver la réponse à la question qui hante constamment ses pensées : qu'est-ce que la Matrice ?</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Mars Attacks.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Mars Attacks</div>
+            <div class="description-film">Effervescence sur la planète Terre. Les petits bonshommes verts ont enfin décidé de nous rendre visite. Ils sont sur le point d'atterrir dans leurs rutilantes soucoupes. La fièvre des grands jours s'empare de l'Amérique dans une comédie de science-fiction nostalgique des années cinquante.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Lord of rings.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Seigneur Des Anneaux II</div>
+            <div class="description-film">Après la mort de Boromir et la disparition de Gandalf, la Communauté s'est scindée en trois. Perdus dans les collines d'`Emyn Muil', Frodon et Sam découvrent qu'ils sont suivis par Gollum, une créature versatile corrompue par l'anneau magique. Gollum promet de conduire les `Hobbits' jusqu'à la `Porte Noire' du `Mordor'. A travers la `Terre du Milieu', Aragorn, Legolas et Gimli font route vers le `Rohan', le royaume assiégé de Theoden.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Léon.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Léon</div>
+            <div class="description-film">Un tueur à gages répondant au nom de Léon prend sous son aile Mathilda, une petite fille de 12 ans, seule rescapée du massacre de sa famille. Bientôt, Léon va faire de Mathilda une `nettoyeuse', comme lui. La jeune fille pourra alors venger son petit frère.</div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films/les_visiteurs.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Les Visiteurs</div>
+            <div class="description-film">En l'an de grâce 1112, le comte de Montmirail et son fidèle écuyer, Jacquouille la Fripouille, vont se retrouver propulsés en l'an 1993 après avoir bu une potion magique fabriquée par l'enchanteur Eusaebius. Ainsi, ils auront l'occasion de se défaire d'un terrible sort.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/les-evades-affiche-francaise-1181187.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Les Evadés</div>
+            <div class="description-film">En 1947, Andy Dufresne, un jeune banquier, est condamné à la prison à vie pour le meurtre de sa femme et de son amant. Ayant beau clamer son innocence, il est emprisonné à `Shawshank', le pénitencier le plus sévère de l'Etat du Maine. Il y fait la rencontre de Red, un homme désabusé, détenu depuis 20 ans. Commence alors une grande histoire d'amitié entre les deux hommes.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le silence des agneaux.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Silence des Agneaux</div>
+            <div class="description-film">Un psychopathe connu sous le nom de `Buffalo Bill' sème la terreur dans le `Middle West' en kidnappant et en assassinant de jeunes femmes. Clarice Starling, une jeune agent du FBI, est chargée d'interroger l'ex-psychiatre Hannibal Lecter. Psychopathe redoutablement intelligent et porté sur le cannibalisme, Lecter est capable de lui fournir des informations. Entre eux s'établit un lien de fascination et de répulsion.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le pianiste.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Pianiste</div>
+            <div class="description-film">Programme campus Varsovie, au mois d'octobre 1939. un jeune pianiste juif, Wladyslaw Szpilman, est enfermé dans le ghetto avec sa famille. Il assiste, impuissant, aux humiliations que subissent quotidiennement les siens. Grâce à une aide extérieure, il échappe de justesse à la déportation mais voit partir toute sa famille. Le jeune homme se cache alors dans les maisons vides et observe passivement les derniers habitants se révolter contre l'occupation allemande.
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le dîner de cons.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Diner de Cons</div>
+            <div class="description-film">Pierre, éditeur, participe chaque mercredi à un `dîner de cons'. Le principe : chacun amène un `con' et celui qui a déniché le plus spectaculaire est déclaré vainqueur. Ce soir, son invité est François Pignon. Passionné de modèles réduits en allumettes, ce dernier est également un véritable porteur de guigne.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/La_Ligne_Verte.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Ligne Verte</div>
+            <div class="description-film">Paul Edgecomb, pensionnaire centenaire d'une maison de retraite, est hanté par ses souvenirs. Gardien-chef du pénitencier de Cold Mountain, en 1935, en Louisiane, il était chargé de veiller au bon déroulement des exécutions capitales au bloc E (la ligne verte) en s'efforçant d'adoucir les derniers moments des condamnés. Parmi eux se trouvait un colosse du nom de John Coffey, accusé du viol et du meurtre de deux fillettes.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/LA-HAINE.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">LA HAINE</div>
+            <div class="description-film">Une émeute éclate dans la cité des Muguets, à la suite d'une bavure policière. Au petit matin, trois copains se retrouvent.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/La cité des enfants perdus.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Cité des Enfants Perdus</div>
+            <div class="description-film">Krank, un étrange personnage vit entouré de clones et d'autres personnages encore plus étranges sur une plate-forme en mer perdue dans le brouillard. Krank, doit, pour ne pas vieillir trop vite, voler les rêves des enfants. C'est pour cela qu'il les enléve de la cité portuaire.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films/Gladiator.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Gladiator</div>
+            <div class="description-film">Le général romain Maximus est le plus fidèle soutien de l'empereur Marc Aurèle, qu'il a conduit de victoire en victoire. Jaloux du prestige de Maximus, et plus encore de l'amour que lui voue l'empereur, le fils de Marc Aurèle, Commode, s'arroge brutalement le pouvoir, puis ordonne l'arrestation du général et son exécution. Maximus échappe à ses assassins, mais ne peut empêcher le massacre de sa famille. Capturé par un marchand d'esclaves, il devient gladiateur et prépare sa vengeance.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/fight-club-affiche-1079106.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Fight Club</div>
+            <div class="description-film">Pourvu d'une situation des plus enviable, un jeune homme à bout de nerfs retrouve un équilibre relatif en compagnie de Marla, rencontrée dans un groupe d'entraide. Il fait également la connaissance de Tyler Durden, personnage enthousiaste et charismatique.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/eyJidWNrZXQiOiJmZGMtc2l0ZXB1YmxpYy1tZWRpYS1wcm9kIiwia2V5IjoidXBsb2Fkc1wvMjAyM1wvMDNcLzE5NDg3LmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTYwMCwiZml0IjoiY292ZXIifX19.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Les Temps Modernes</div>
+            <div class="description-film">Des troupeaux de moutons, puis des flots d'ouvriers sortent d'une usine. Charlot fait partie du nombre. Empêtré sur un tapis roulant, il est happé par les rouages d'une énorme `machine à manger', à laquelle il sert de cobaye.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Blade Runner.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Blade Runner</div>
+            <div class="description-film">En l'an 2019, un ex-policier devenu détective privé, Rick Deckard, est rappelé en service pour faire la chasse à des robots d'apparence humaine appelés "replicants." Deckard doit en éliminer quatre qui se cachent à Los Angeles.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films/Bienvenue à Gattaca.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Bienvenue à Gattaca</div>
+            <div class="description-film">Dans un futur proche, notre société pratique l'eugénisme à grande échelle : les gamètes des parents sont triés et sélectionnés afin de concevoir in vitro des enfants quasi parfaits. Malgré l'interdiction officielle, les entreprises recourent à des tests ADN discrets afin de sélectionner leurs employés. Ainsi, les personnes conçues naturellement se voient reléguées à des tâches subalternes.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/affiche-film-l-odyssee-l-espace-2001-1807.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">2001, l'odyssée de l'espace</div>
+            <div class="description-film">En plein désert, deux tribus de grands singes s'affrontent autour d'un point d'eau. L'apparition d'un mystérieux monolithe fascine l'un des primates, qui bientôt crée l'outil lui permettant de dominer ses congénères.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/5jl5sfhtealp60rm9gxoda2dmx9-522.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">E.T</div>
+            <div class="description-film">Une soucoupe volante atterrit en pleine nuit près de Los Angeles. Quelques extraterrestres, envoyés sur Terre en mission d'exploration botanique, sortent de l'engin, mais un des leurs s'aventure au-delà de la clairière où se trouve la navette. Celui-ci se dirige alors vers la ville. C'est sa première découverte de la civilisation humaine. Bientôt traquée par des militaires et abandonnée par les siens, cette petite créature apeurée se nommant E.T. se réfugie dans une résidence de banlieue.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le 5e élément.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Cinquieme Elément</div>
+            <div class="description-film">Egypte, 1914. Des extraterrestres récupèrent quatre pierres magiques, symboles des quatre éléments, jadis confiées à des prêtres. Avant de partir, les extraterrestres promettent que dans 300 ans, ils rapporteront les précieux cailloux. Au XXIIIe siècle, alors qu'ils font route vers la Terre, ils sont anéantis par la planète du Mal. Les habitants de ce monde maléfique, les Mangalores, s'emparent des pierres et foncent vers la Terre.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films/514297.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Forrest Gump</div>
+            <div class="description-film">Sur un banc, à Savannah, en Géorgie, Forrest Gump attend le bus. Comme celui-ci tarde à venir, le jeune homme raconte sa vie à ses compagnons d'ennui. A priori, ses capacités intellectuelles plutôt limitées ne le destinaient pas à de grandes choses. Qu'importe.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Amelie poulain.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le fabuleux destin d'Amélie Poulain</div>
+            <div class="description-film">Amélie, une jeune serveuse dans un bar de Montmartre, passe son temps à observer les gens et à laisser son imagination divaguer. Elle s'est fixé un but : faire le bien de ceux qui l'entourent. Elle invente alors des stratagèmes pour intervenir incognito dans leur existence. Le chemin d'Amélie est jalonné de rencontres : Georgette, la buraliste hypocondriaque ; Lucien, le commis d'épicerie ; Madeleine Wallace, la concierge portée sur le porto et les chiens empaillés ; Raymond Dufayel, son voisin.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/The Shining.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Shining</div>
+            <div class="description-film">Jack Torrance, gardien d'un hôtel fermé l'hiver, sa femme et son fils Danny s'apprêtent à vivre de longs mois de solitude. Danny, qui possède un don de médium, le Shining, est effrayé à l'idée d'habiter ce lieu, théâtre marqué par de terribles évènements passés...
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/81MJp6wKVYL.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Pulp Fiction</div>
+            <div class="description-film">L'odyssée sanglante et burlesque de petits malfrats dans la jungle de Hollywood à travers trois histoires qui s'entremêlent. Dans un restaurant, un couple de jeunes braqueurs, Pumpkin et Yolanda, discutent des risques que comporte leur activité. Deux truands, Jules Winnfield et son ami Vincent Vega, qui revient d'Amsterdam, ont pour mission de récupérer une mallette au contenu mystérieux et de la rapporter à Marsellus Wallace.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

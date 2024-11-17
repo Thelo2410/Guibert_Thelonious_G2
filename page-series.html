@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Séries</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 41rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Liste de Séries</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Séries/Arcane.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Arcane</div>
+            <div class="description-film">Au milieu du conflit entre les villes jumelles de Piltover et Zaun, deux soeurs se battent dans les camps opposés d'une guerre entre technologies magiques et convictions incompatibles.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/One Piece.jpeg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">One Piece</div>
+            <div class="description-film">L'histoire suit les aventures de Monkey D. Luffy, un garçon dont le corps a acquis les propriétés du caoutchouc après avoir mangé par inadvertance un fruit du démon. Avec son équipage de pirates, appelé l'équipage de Chapeau de paille, Luffy explore Grand Line à la recherche du trésor ultime connu sous le nom de « One Piece » afin de devenir le prochain roi des pirates.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/DBZ.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Dragon Ball Z</div>
+            <div class="description-film">L'ennemi de Sangoku croit avoir détruit Sangohan et Krilin. Sur le chemin du retour, il est arrêté par le guerrier de l'espace et il lui apprend que c'est le Tyran qui a détruit la planète Végéta.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Breaking Bad.jpeg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Breaking Bad</div>
+            <div class="description-film">Walter White, 50 ans, est professeur de chimie dans un lycée du Nouveau-Mexique. Pour réunir de l'argent afin de subvenir aux besoins de sa famille, Walter met ses connaissances en chimie à profit pour fabriquer et vendre du crystal meth.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Séries/The Walking Dead.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Walking Dead</div>
+            <div class="description-film">Après une apocalypse ayant transformé la quasi-totalité de la population en zombies, un groupe d'hommes et de femmes mené par l'officier Rick Grimes tente de survivre. Ensemble, ils vont devoir tant bien que mal faire face à ce nouveau monde.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Prison Break.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Prison Break</div>
+            <div class="description-film">Son frère injustement accusé de meurtre, un ingénieur en génie civil décide de le faire évader de prison.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Shameless.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Shameless</div>
+            <div class="description-film">Pour les enfants Gallagher, la vie n'est pas un long fleuve tranquille. Fiona, 20 ans, élève du mieux possible sa soeur et ses quatre frères. Leur mère les a abandonnés et eur père, Frank, alcoolique, dilapide l'argent des allocations familiales.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Sherlock.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Sherlock</div>
+            <div class="description-film">Dans cette nouvelle adaptation des fameuses intrigues d'Arthur Conan Doyle, l'excentrique détective recherche des indices dans les rues de Londres.
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Haikyuu.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Haikyuu</div>
+            <div class="description-film">Shōyō Hinata, jeune élève au collège Yukigaoka, trouve un intérêt soudain au volley-ball après avoir vu un match de tournoi national inter-lycée à la télévision. Malgré sa petite taille, il est déterminé à suivre le même chemin que son joueur modèle du championnat national, surnommé le « petit géant ». Il crée alors un club de volley-ball afin de commencer son entraînement, et il arrive à réunir cinq autres joueurs lors de sa dernière année au collège. Son équipe participe alors à un tournoi mais se fait éliminer dès le premier tour par l'équipe de Tobio Kageyama du collège Kitagawa Daiichi. Malgré cette défaite, Shōyō continue de s'entraîner tous les jours, ayant promis à Tobio Kageyama qu'un jour, il le surpasserait. Plus tard, il s'inscrit au lycée Karasuno, là où a évolué le « petit géant », mais découvre que son rival s'y trouve aussi. Les deux garçons devront apprendre à travailler en équipe s'ils veulent faire parvenir leur équipe jusqu'au sommet...</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Blue Lock.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Blue Lock</div>
+            <div class="description-film">Le manga commence avec l'élimination de la Coupe du monde 2018 du Japon, ce qui incite l'Union japonaise de football à lancer un programme de surveillance dans les écoles secondaires afin de sélectionner les joueurs qui vont s'entraîner et se préparer pour la Coupe du monde 2022. Le protagoniste Yoichi Isagi, un membre avancé de son équipe de lycée perd le match qui aurait pu qualifier son équipe pour la finale de Saitama, faute de pouvoir jouer dans les championnats nationaux. Alors qu'il croyait que tout était perdu, Yoichi reçoit une invitation à rejoindre le programme Blue Lock.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/21.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Eyeshield 21</div>
+            <div class="description-film">Sena Kobayakawa, le héros de l'histoire, est un jeune homme frêle et craintif. À force de jouer les larbins pour les autres, il a acquis une vitesse de course phénoménale. Dès son arrivée au lycée, il est remarqué par Yōichi Hiruma, le démoniaque Quarter Back de l'équipe de football américain de son lycée, les Deimon Devil Bats. Si, au début, Sena accepte d'en faire partie en tant que simple secrétaire, il va rapidement devenir Eyeshield 21, le mystérieux Running Back de l'équipe. Incognito derrière sa visière teintée verte, il constitue par sa rapidité l'arme secrète des Deimon Devil Bats. L'histoire se focalise tout autant sur l'évolution de l'équipe, sur l'élargissement de son effectif, que sur le rêve irréaliste des vétérans du club, Hiruma et Kurita, de participer au Christmas Bowl.
+
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Kuroko.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Kuroko no Basket</div>
+            <div class="description-film">C'est la rentrée au club de basket-ball du lycée Seirin et cette année, deux rookies se démarquent. D'un côté, le volcanique Taiga Kagami, fraîchement revenu des États-Unis où il a fait ses armes sous les arceaux.
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Peaky.jpeg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Peaky Blinders</div>
+            <div class="description-film">Birmingham, en 1919. Un gang familial règne sur un quartier de la ville : les Peaky Blinders, ainsi nommés pour les lames de rasoir qu'ils cachent dans la visière de leur casquette.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Mirror.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Black Mirror</div>
+            <div class="description-film">Chaque épisode a un casting différent, un décor différent et une réalité différente, mais ils traitent tous de la façon dont nous vivons maintenant, et de la façon dont nous pourrions vivre dans dix minutes si nous sommes maladroits.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/LOST.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Lost - Les Disparus</div>
+            <div class="description-film">Après le crash de leur avion sur une île perdue, des survivants doivent apprendre à cohabiter et survivre dans cet environnement hostile. Bien vite, ils se rendent compte qu'une menace semble planer sur l'île.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Dexter.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Dexter</div>
+            <div class="description-film">De jour, l'avenant Dexter est expert médico-légal en analyse de traces de sang pour la police de Miami. De nuit, c'est un tueur en série qui s'attaque aux meurtriers.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Séries/GOT.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Games Of Thrones</div>
+            <div class="description-film">Neuf familles nobles rivalisent pour le contrôle du Trône de Fer dans les sept royaumes de Westeros. Pendant ce temps, des anciennes créatures mythiques oubliées reviennent pour faire des ravages.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Bleach.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Bleach</div>
+            <div class="description-film">ive de Karakura. Ichigo Kurosaki, lycéen de 15 ans, arrive à voir, entendre et toucher les âmes des morts depuis qu'il est tout petit. Un soir, sa routine quotidienne vient à être bouleversée à la suite de sa rencontre avec une shinigami (死神?, littéralement « dieu de la mort »), Rukia Kuchiki, et la venue d'un monstre appelé hollow. Ce dernier étant venu dévorer les âmes de sa famille et la shinigami venue le protéger ayant été blessée par sa faute, Ichigo accepte de devenir lui-même un shinigami afin de les sauver.
+
+                Cependant, le transfert de pouvoir, censé être temporaire et partiel, est complet et ne s'achève pas. Ichigo est forcé de prendre la responsabilité de la tâche incombant à Rukia Kuchiki. Il commence donc la chasse aux hollows tout en protégeant les âmes humaines.
+                
+                Le début est centré sur une chasse aux mauvais esprits relativement peu puissants, avec un simple sabre. L'histoire va peu à peu se diriger vers un vaste complot mystico-politique après l'apparition des premiers autres shinigami. Les batailles au sabre du commencement vont alors se métamorphoser en combats dantesques avec des armes aux pouvoirs surprenants et variés, et parfois aux proportions gigantesques.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Death Note.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Death Note</div>
+            <div class="description-film">Un carnet maléfique (Death Note) tombe entre les mains de Light Yagami, un adolescent de 17 ans. Ce cahier a un pouvoir maléfique : si quelqu'un note un nom sur ses pages, la personne en question meurt quelques secondes plus tard.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Hunter X hunter.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Hunter X Hunter</div>
+            <div class="description-film">Gon Freecss est un jeune garçon âgé de 12 ans, rêvant de devenir hunter (littéralement chasseur en anglais). Les hunters sont des citoyens d'élite autorisés à faire quasiment tout ce qu'ils souhaitent sur simple présentation de leur licence : ils peuvent ainsi acquérir gratuitement tout objet à la vente sur les fonds de l'association, réquisitionner tout véhicules, logements et outils pour leur travail et sont de facto habilités à exercer tous les métiers du monde, pouvant tout aussi bien devenir chasseurs de primes, chefs-cuisinier, archéologues, zoologues, justiciers ou consultants dans divers domaines. Son père, Ging Freecss, qu'il ne connaît pas directement, est considéré comme un des plus grands hunters de son temps. C'est aussi pour le retrouver que Gon veut devenir hunter. Cependant l'examen de hunter, qui a lieu chaque année, est extrêmement difficile et périlleux. On dit que en moyenne un candidat sur 10 000 arrive sur le lieu des épreuves et qu'un seul candidat tous les trois ans devient hunter à sa première tentative. Durant les épreuves, il n'est pas rare d'être blessé, voire tué par des monstres, des pièges ou même d'autres concurrents…</div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Full Metal.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Full Metal Alchiemist</div>
+            <div class="description-film">Dans le pays d'Amestris, pays où l'alchimie est élevée au rang de science universelle, deux frères, Edward et Alphonse Elric, parcourent le pays à la recherche de la légendaire pierre philosophale. Leur père les a quittés et leur mère, Trisha Elric, meurt quelques années plus tard d'une maladie, laissant ses deux jeunes enfants derrière elle. Quelque temps plus tard, les deux frères tentent de la faire revenir grâce à l'alchimie, bravant la loi qui interdit formellement la transmutation humaine. Ils en payeront le prix fort. Edward, l'aîné, perdra sa jambe gauche, et son petit frère Alphonse perdra son corps tout entier. Edward sacrifiera son bras droit dans le but de sceller l'âme d’Alphonse dans une armure. Edward décide ensuite de s'engager dans l'armée à l'âge de 12 ans en tant qu'alchimiste d'État. Il réussit l'examen haut-la-main et obtient son nom d'alchimiste : Fullmetal. Aidés du statut d'alchimiste d'État d'Edward, les deux frères chercheront, au péril de leur vie, la pierre qui leur rendra ce qu'ils ont perdu, mais le secret de la pierre philosophale est bien gardé…</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Attaque des Titans.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'Attaque des Titans</div>
+            <div class="description-film">L’histoire tourne autour du personnage d’Eren Jäger dans un monde où l’humanité vit entourée d’immenses murs pour se protéger de créatures gigantesques, les Titans. Le récit raconte le combat mené par l’humanité pour reconquérir son territoire, en éclaircissant les mystères liés à l’apparition des Titans, du monde extérieur et des évènements précédant la construction des murs.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Naruto Shippuden.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Naruto Shippuden</div>
+            <div class="description-film">Après deux ans et demi d'entraînement avec Jiraya, Naruto retrouve ses camarades de l'Académie des ninja ainsi que ses professeurs de Konoha. Tous ont évolué, y compris les ninjas du village de Suna. Cependant, le village est menacé par Akatsuki.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Séries/Berserk.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Berserk</div>
+            <div class="description-film">Guts est un guerrier solitaire qui est né d'un cadavre pendu, puis recueilli et élevé comme mercenaire par un père adoptif et abusif, Gambino. Leur relation ambivalente atteint son paroxysme lorsque Guts a été forcé de tuer un Gambino ivre en légitime défense, fuyant son groupe de mercenaires et devenant un soldat de fortune. Sa redoutable réputation attire l'attention de Griffith, le chef charismatique d'un groupe de mercenaires connu sous le nom de Troupe du Faucon. Griffith force Guts à rejoindre le groupe après l'avoir vaincu au combat, Guts devenant son meilleur combattant et son principal confident. Le groupe est engagé par le royaume de Midland pour l'aider dans sa guerre d'un siècle contre l'empire Tudor. Guts découvre le désir de Griffith de diriger son propre royaume et son mystérieux pendentif connu sous le nom de Behelit (ou Béhérit, suivant les traductions).</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
+
+

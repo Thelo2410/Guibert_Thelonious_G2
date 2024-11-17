@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorties Cinéma</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 41rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Actuellement au Cinéma</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Monte.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Comte de Monte-Cristo</div>
+            <div class="description-film">Victime d'un complot, le jeune Edmond Dantès est arrêté le jour de son mariage pour un crime qu'il n'a pas commis. Après quatorze ans de détention au château d'If, il parvient à s'évader. Devenu immensément riche, il revient sous l'identité du comte de Monte-Cristo pour se venger des trois hommes qui l'ont trahi.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Gladiator.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Gladiator II</div>
+            <div class="description-film">Des années après avoir été témoin de la mort du héros vénéré Maximus aux mains de son oncle, Lucius est contraint d'entrer dans le Colisée après que sa maison a été conquise par les empereurs tyranniques qui dirigent désormais Rome d'une main de fer.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Elyas.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Elyas</div>
+            <div class="description-film">Elyas est un ancien soldat des forces spéciales, solitaire et paranoïaque depuis l'Afghanistan. Il est aujourd'hui recruté pour assurer la sécurité d'Amina et sa fille Nour, 13 ans, toutes deux venues des Emirats et réfugiées dans un château. Alors qu'un commando débusque les deux femmes et déchaîne les enfers, Elyas redevient le redoutable guerrier qu'il était, ne reculant devant rien pour les sauver.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Vaiana 2.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Vaiana 2</div>
+            <div class="description-film">Moana et Maui sont réunis trois ans plus tard pour un nouveau voyage aux côtés d'un équipage de marins improbables.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Wicked.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Wicked</div>
+            <div class="description-film">Elphaba, une jeune femme incomprise à cause de sa peau verte inhabituelle, doit encore découvrir son véritable pouvoir. Glinda, une jeune femme populaire, dorée par le privilège et l'ambition, doit encore découvrir son véritable coeur.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Red One.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Red One</div>
+            <div class="description-film">Après l'enlèvement du père Noël, nom de code: Rouge, le chef de la sécurité du pôle Nord doit s'associer avec le chasseur de primes le plus célèbre du monde dans une mission pleine d'action à travers le globe pour sauver Noël.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Vallée.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Vallée des fous</div>
+            <div class="description-film">Passionné de voile, Jean-Paul traverse une passe difficile. Il accumule les dettes et s'éloigne des siens. Bien décidé à reprendre sa vie en main, il s'inscrit à Virtual Regatta, la course virtuelle du Vendée Globe. Dans son jardin, il se met dans les conditions d'un vrai skipper en s'isolant pendant 3 mois sur son bateau. Ce voyage pas comme les autres lui permettra de renouer avec sa famille, mais surtout avec lui-même.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Tongs.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">En tongs au pied de l'Himalaya</div>
+            <div class="description-film">Pauline est la maman d'Andréa, un petit garçon de 6 ans et demi à qui on a diagnostiqué un trouble du spectre autistique. Il n'est pas vraiment au niveau mais il est toujours scolarisé et s'apprête à faire sa rentrée en grande section de maternelle. Pour Pauline, sans revenus fixes et récemment séparée de Fabrice, le père d'Andréa, tout semble concourir à faire de sa vie une succession d'échecs. Or pour Andréa, c'est une année cruciale qui va déterminer s'il peut ou non rester scolarisé.
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Twisters.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Twisters</div>
+            <div class="description-film">Ancienne chasseuse de tornades, Kate est encore traumatisée par sa confrontation avec une tornade lorsqu’elle était étudiante. Désormais, elle préfère étudier le comportement des tempêtes en toute sécurité depuis New York. Mais lorsque son ami Javi lui demande de tester un nouveau détecteur de tornades, elle accepte de retourner au cœur de l’action. Elle rencontre alors le charmant et téméraire Tyler Owens, célèbre pour ses vidéos de chasse aux tornades postées sur les réseaux sociaux. Alors que la saison des tempêtes atteint son paroxysme, des tornades d’une ampleur sans précédent mettent leurs vies en péril.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Risuq.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Vol à haut risque</div>
+            <div class="description-film">Un marshal américain monte à bord d'un petit avion pour transférer un témoin du gouvernement à New York. Alors qu'ils traversent les étendues sauvages de l'Alaska, les tensions commencent à monter car tous les passagers ne sont pas ce qu'ils semblent être.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Allure.webp " alt="Affiche du film" class="affiche">
+            <div class="titre-film">À toute allure</div>
+            <div class="description-film">Elle est officier de sous-marin tactique. Il est steward. Ils se rencontrent lors d'une escale. Mais leur aventure naissante doit subitement s'interrompre. Et le voilà qu'il s'accroche, comme si on avait le temps d'être amoureuse à bord d'un bâtiment militaire.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Sorties Cinéma/Mufasa.jpeg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Mufasa</div>
+            <div class="description-film">Rafiki veut transmettre à la jeune lionne Kiara - la fille de Simba et Nala - la légende de Mufasa. Il sera aidé en cela par Timon et Pumbaa, dont les formules choc sont désormais bien connues.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorties de la semaine</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 41rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Sorties cette semaine sur le site</h1>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Inglorious Bastards.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Inglorious Bastards</div>
+            <div class="description-film">Dans la France occupée de 1940, Shosanna Dreyfus assiste à l'exécution de sa famille tombée entre les mains du colonel nazi Hans Landa. Shosanna s'échappe de justesse et s'enfuit à Paris où elle se construit une nouvelle identité en devenant exploitante d'une salle de cinéma. Quelque part ailleurs en Europe, le lieutenant Aldo Raine forme un groupe de soldats juifs américains pour mener des actions punitives particulièrement sanglantes contre les nazis.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Kill Bill.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Kill Bill</div>
+            <div class="description-film">Au cours d'une cérémonie de mariage en plein désert, un commando fait irruption dans la chapelle et tire sur les convives. Laissée pour morte, la mariée enceinte retrouve ses esprits après un coma de quatre ans.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Minority Report.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Minority Report</div>
+            <div class="description-film">En 2054, la société du futur a éradiqué les crimes en se dotant d'un système de prévention, de détection et de répression le plus sophistiqué du monde. Dissimulés de tous, trois extras-lucides transmettent les images des crimes à venir aux policiers de la Précrime. Cependant, un jour, John, le chef de brigade, reçoit l'impossible : sa propre image assassinant un inconnu. Démarre alors une course contre la montre pour prouver son innocence.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Sin City.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Sin City</div>
+            <div class="description-film">Sin City est une ville infestée de criminels, de flics ripoux et de femmes fatales. Hartigan s'est juré de protéger Nancy, une strip-teaseuse qui l'a fait craquer. Marv, un marginal brutal mais philosophe, part en mission pour venger la mort de son unique véritable amour, Goldie. Dwight est l'amant secret de Shellie.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Les Infiltrés.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Les Infiltrés</div>
+            <div class="description-film">Un policier de Boston, Billy Costigan, s'infiltre dans l'organisme criminel qui contrôle le sud de la ville, et gagne la confiance de son chef, Frank Costello, pendant qu'un criminel de carrière, Colin Sullivan, s'est infiltré et enquête, lui, sur les activités du département de police.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Hulk.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'incroyable Hulk</div>
+            <div class="description-film">Tapi dans les bas-fonds de Sao Paulo, Bruce Banner tente désespérément de percer le secret de la maladie qui l'afflige.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films d'Actions/Inception.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Inception</div>
+            <div class="description-film">Dom Cobb est un voleur expérimenté dans l'art périlleux de l'extraction : sa spécialité consiste à s'approprier les secrets les plus précieux d'un individu, enfouis au plus profond de son subconscient, pendant qu'il rêve et que son esprit est particulièrement vulnérable. Très recherché pour ses talents dans l'univers trouble de l'espionnage industriel, Cobb est aussi devenu un fugitif traqué dans le monde entier. Cependant, une ultime mission pourrait lui permettre de retrouver sa vie d'avant.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films/Le 5e élément.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Cinquieme Elément</div>
+            <div class="description-film">Egypte, 1914. Des extraterrestres récupèrent quatre pierres magiques, symboles des quatre éléments, jadis confiées à des prêtres. Avant de partir, les extraterrestres promettent que dans 300 ans, ils rapporteront les précieux cailloux. Au XXIIIe siècle, alors qu'ils font route vers la Terre, ils sont anéantis par la planète du Mal. Les habitants de ce monde maléfique, les Mangalores, s'emparent des pierres et foncent vers la Terre.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Blind.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Blind Side</div>
+            <div class="description-film">Michael, un adolescent issu d'un milieu défavorisé, est accueilli dans une école secondaire prestigieuse grâce à un entraîneur qui fait valoir les talents sportifs du jeune homme. Michael se lie d'amitié avec un petit garçon de son collège.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Arabie.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Laurence d'Arabie</div>
+            <div class="description-film">En 1916, un jeune officier britannique est chargé d'enquêter sur les révoltes arabes contre l'occupant turc. Plus tard surnommé "Lawrence d'Arabie", il se range du côté des insurgés et, dans les dunes éternelles du désert, organise une guérilla.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/The Revenant.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Revenant</div>
+            <div class="description-film">Durant une expédition dans une Amérique profondément sauvage, le légendaire trappeur Hugh Glass est brutalement attaqué par un ours et laissé pour mort par les membres de sa propre équipe. Dans sa quête de survie, Glass endure une souffrance inimaginable ainsi que la trahison de son homme de confiance, John Fitzgerald. Guidé par la volonté et l'amour de sa famille, Glass doit affronter un hiver brutal dans une inexorable lutte pour survivre et trouver la rédemption.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Primés/Oppenheimer.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Oppenheimer</div>
+            <div class="description-film">En 1942, convaincus que l'Allemagne nazie est en train de développer une arme nucléaire, les États-Unis initient, dans le plus grand secret, le Projet Manhattan destiné à mettre au point la première bombe atomique de l'histoire. Pour piloter ce dispositif, le gouvernement engage J.
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/l_arme_fatale.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">L'Arme fatale</div>
+            <div class="description-film">Robert Murtaugh, policier noir quinquagénaire, marié et père de famille, compte bien atteindre paisiblement la retraite. Mais voici qu'on lui confie comme coéquipier Riggs, un jeune flic suicidaire qui vient de perdre sa femme et manie son arme comme un cow-boy. L'un et l'autre, anciens du Vietnam, vont s'opposer à un gang de trafiquants de drogue dirigé par une organisation fasciste...
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Heat.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Heat</div>
+            <div class="description-film">La bande de Neil McCauley à laquelle est venu se greffer Waingro, une nouvelle recrue, attaque un fourgon blindé pour s'emparer d'une somme importante en obligations. Cependant, ce dernier tue froidement l'un des convoyeurs et Chris Shiherlis se retrouve obligé de terminer le travail.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Inside Man.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Inside Man</div>
+            <div class="description-film">Sous les traits de peintres en bâtiment, des braqueurs s'attaquent à la prestigieuse Manhattan Trust Bank. Ils prennent en otages toutes les personnes présentes sur les lieux et les contraignent à revêtir la même combinaison qu'eux. Un coffre intéresse tout particulièrement le cerveau de l'opération. Dehors, la police décide de déployer un impressionnant dispositif de sécurité pour appréhender les voleurs.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Policiers/Shutter Island.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Shutter Island</div>
+            <div class="description-film">En 1954, une meurtrière, extrêmement dangereuse, placée en centre de détention psychiatrique disparaît sur l'île de Shutter Island. Deux officiers du corps fédéral des marshals, Teddy Daniels et Chuck Aule, sont envoyés sur place pour enquêter. Très vite, Teddy Daniels comprend que le personnel de l'établissement cache quelque chose. Seul indice dont il dispose : un bout de papier sur lequel est griffonnée une suite de chiffres entrecoupée de lettres.
+            </div>
+        </div>
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/La tour.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Tour Montparnasse Infernale</div>
+            <div class="description-film">Eric et Ramzy lavent les vitres de la Tour Montparnasse. La journée s'achève et seule Marie-Joëlle se trouve encore dans les bureaux désertés ; elle attend son oncle, un patron despotique. Eric tente en vain de séduire la jeune femme avec de nombreuses mimiques. L'oncle arrive enfin, entouré de ses fidèles. Soudain, des malfaiteurs surgissent dans le but de dérober le contenu d'un coffre-fort.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/OSS.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">OSS 117</div>
+            <div class="description-film">En 1955, Le Caire est un véritable nid d'espions. Tout le monde se méfie de tout le monde : Anglais, Français, Soviétiques, la famille du roi déchu Farouk qui veut retrouver son trône, les `Aigles de Kheops', secte religieuse qui veut prendre le pouvoir. Le président de la République Française, Monsieur René Coty, envoie son arme maîtresse mettre de l'ordre dans cette pétaudière au bord du chaos : Hubert Bonisseur de la Bath, dit `OSS 117'.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/le_pari.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Pari</div>
+            <div class="description-film">Didier et Bernard sont beaux-frères et se détestent : le premier est un riche pharmacien, le second un modeste professeur de banlieue. L'un est de droite, l'autre de gauche. Seul point commun : ils sont tous les deux des fumeurs invétérés.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Intouchables.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Intouchables</div>
+            <div class="description-film">Tout les oppose et il était peu probable qu'ils se rencontrent un jour, et pourtant. Philippe, un riche aristocrate devenu tétraplégique après un accident de parapente va engager Driss, un jeune homme d'origine sénégalaise tout droit sorti de prison, comme auxiliaire de vie à domicile. Pourquoi lui ? Tout simplement parce qu'il ne regarde pas Philippe avec le même regard de pitié que les autres candidats.
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

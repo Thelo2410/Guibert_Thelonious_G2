@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Films Comiques</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(18, 18, 18);
+            color: rgb(255, 255, 255);
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(229, 9, 20);
+        }
+
+        .liste-films {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+            gap: 1.25rem;
+            padding: 1.25rem 1.25rem;
+        }
+
+        .film {
+            background-color: rgb(28, 28, 28);
+            border-radius: 0.625rem;
+            overflow: hidden;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .film:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0.375rem 0.75rem rgba(0, 0, 0, 0.5);
+        }
+
+        .affiche {
+            width: 100%;
+            height: 42rem;
+            object-fit: cover;
+        }
+
+        .titre-film {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin: 0.625rem;
+            text-align: center;
+        }
+
+        .description-film {
+            font-size: 0.875rem;
+            margin: 0 0.625rem 0.625rem;
+            color: rgb(204, 204, 204);
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <section class="top-page">
+
+        <header class="header">
+
+            <a href="index.html"><img class="logo-site" src="Image/Icones/Logo du site.png" width="77.5" alt="Logo du site"></a>
+            
+            <nav class="nav">
+                    <li><a href="index.html">Acceuil </a></li>
+                    <li><a href="page-films.html">Films </a></li>
+                    <li><a href="page-series.html">Séries </a></li>
+            </nav>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Rechercher..." class="search-input">
+                <button class="search-button" aria-label="Rechercher">
+                 <img  src="Image/Icones/loupe.png" alt="Logo de recherche" width="25">   
+                </button>
+            </div>
+                        
+            <nav class="logo-compte"><a href="page-compte.html"><img src="Image/Icones/horreur.png" alt="Logo Espace Abonné" width="50px"></a></nav>
+
+        </header>
+
+    </section>
+
+    <h1>Films Comiques</h1>
+
+    <div class="liste-films">
+        
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/The Blues Brothers.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Blues Brothers</div>
+            <div class="description-film">Jake et Elwood Blues veulent reformer leur groupe de rhythm'n'blues et donner des concerts afin de gagner les 5000 dollars nécessaires à la survie de l'orphelinat de leur enfance, menacé de fermeture par le fisc. Leur projet s'annonce difficile à réaliser. Poursuivis par la police, une bande de néonazis, des musiciens et une femme mystérieuse, animée d'une rancune tenace, les Blues Brothers se trouvent mêlés à des aventures plus rocambolesques les unes que les autres.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Nos jours .jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Nos Jours Heureux</div>
+            <div class="description-film">Vincent Rousseau dirige pour la première fois une colonie de vacances et se retrouve plongé pendant trois semaines dans l'univers des colos avec petites histoires et gros soucis à la clef ! Dès le départ en train, les enfants sont ingérables : l'une a perdu sa valise, l'autre assomme tout le monde de questions.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Pere Noel.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Père Noël est une Ordure</div>
+            <div class="description-film">Le soir de Noël, dans un petit appartement qui leur sert de local, Pierre et Thérèse s'apprêtent à assurer la permanence de SOS-détresse-amitié. Ils reçoivent la visite de Josette, une jeune clocharde qui vient de quitter son ami Félix.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Miss Sunshine.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Little Miss Sunshine</div>
+            <div class="description-film">L'histoire des Hoover. La fille de sept ans, Olive, se rêve en reine de beauté. Quand elle décroche une invitation à concourir pour le titre très sélectif de `Little Miss Sunshine' en Californie, toute la famille décide de faire corps derrière elle. Les voilà donc entassés dans leur break Volkswagen rouillé, ils mettent le cap vers l'ouest et entament un voyage de trois jours qui les mettra aux prises avec des événements inattendus.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Shaun.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Shaun Of The Dead</div>
+            <div class="description-film">Métro, boulot, dodo. C'est à peu de choses près la vie de Shaun, trentenaire britannique, vendeur de télévision sans ambition dont la vie sentimentale n'est guère plus réjouissante. Une invasion de morts-vivants dans sa petite vie de zombie va alors changer la donne.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Very Bad.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Very Bad Trip</div>
+            <div class="description-film">Trois jeunes hommes cherchent un ami qui a disparu au cours d'une super fête à Las Vegas. Le trio doit tenter de se souvenir de toutes les mauvaises décisions prises la veille afin de retrouver leur ami et le ramener à temps pour son mariage prévu à Los Angeles.</div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Le sens de la fête.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Sens de la Fête</div>
+            <div class="description-film">Max est traiteur depuis trente ans. Des fêtes il en a organisées des centaines. Aujourd'hui c'est un sublime mariage dans un château du 17e siècle, un de plus, celui de Pierre et Héléna. Comme d'habitude, Max a tout coordonné, mais la loi des séries va venir bouleverser un planning sur le fil où chaque moment de bonheur et d'émotion risque de se transformer en désastre ou en chaos.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Cité peur.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Cité de la Peur</div>
+            <div class="description-film">Pas facile pour Odile Deray, petite attachée de presse de cinéma, de faire parler de son film "Red is Dead" lors du festival de Cannes. Il faut avouer qu'il s'agit d'un film d'horreur de série Z, un petit budget aux acteurs improbables. Pourtant, un jour, la chance sourit à Odile : un tueur commet des meurtres exactement de la même manière que dans son film. L'occasion est trop belle : de vrais meurtres, en plein Festival de Cannes. Comme publicité, on ne peut pas rêver mieux.
+            </div>
+        </div>
+    
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/La tour.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">La Tour Montparnasse Infernale</div>
+            <div class="description-film">Eric et Ramzy lavent les vitres de la Tour Montparnasse. La journée s'achève et seule Marie-Joëlle se trouve encore dans les bureaux désertés ; elle attend son oncle, un patron despotique. Eric tente en vain de séduire la jeune femme avec de nombreuses mimiques. L'oncle arrive enfin, entouré de ses fidèles. Soudain, des malfaiteurs surgissent dans le but de dérober le contenu d'un coffre-fort.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/OSS.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">OSS 117</div>
+            <div class="description-film">En 1955, Le Caire est un véritable nid d'espions. Tout le monde se méfie de tout le monde : Anglais, Français, Soviétiques, la famille du roi déchu Farouk qui veut retrouver son trône, les `Aigles de Kheops', secte religieuse qui veut prendre le pouvoir. Le président de la République Française, Monsieur René Coty, envoie son arme maîtresse mettre de l'ordre dans cette pétaudière au bord du chaos : Hubert Bonisseur de la Bath, dit `OSS 117'.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/le_pari.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Pari</div>
+            <div class="description-film">Didier et Bernard sont beaux-frères et se détestent : le premier est un riche pharmacien, le second un modeste professeur de banlieue. L'un est de droite, l'autre de gauche. Seul point commun : ils sont tous les deux des fumeurs invétérés.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Intouchables.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Intouchables</div>
+            <div class="description-film">Tout les oppose et il était peu probable qu'ils se rencontrent un jour, et pourtant. Philippe, un riche aristocrate devenu tétraplégique après un accident de parapente va engager Driss, un jeune homme d'origine sénégalaise tout droit sorti de prison, comme auxiliaire de vie à domicile. Pourquoi lui ? Tout simplement parce qu'il ne regarde pas Philippe avec le même regard de pitié que les autres candidats.
+            </div>
+        </div>
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/case_depart.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Case Départ</div>
+            <div class="description-film">Deux demi-frères que tout oppose font le voyage vers la Martinique pour retrouver leur père mourant. Dans un dernier souffle, celui-ci leur apprend que son bien le plus précieux est le document authentique qui a affranchi leurs ancêtres de l'esclavage. Déçus par ce qui constitue à leurs yeux un maigre héritage, les deux frères, fous de rage, déchirent le précieux document. Ce sacrilège les propulse alors au XIXè siècle, en plein esclavagisme.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/le_prenom.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Le Prénom</div>
+            <div class="description-film">Vincent, la quarantaine bien entamée, va être papa pour la première fois. Invité à dîner chez sa soeur et son beau-frère, il retrouve Claude, un ami d'enfance. La soirée se déroule dans la joie et la bonne humeur jusqu'au moment où Vincent annonce le prénom du futur bébé. Le dîner familial sombre alors dans le chaos et devient le théâtre de violents règlements de comptes.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Place .webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Place Publique</div>
+            <div class="description-film">Castro, autrefois vedette du petit écran, est à présent un animateur sur le déclin. Aujourd'hui, son chauffeur, Manu, le conduit à la pendaison de crémaillère de sa productrice et amie de longue date, Nathalie, qui a emménagé dans une belle maison près de Paris.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Ch'ti.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Bienvenue Chez les CH'TIS</div>
+            <div class="description-film">Un directeur de la Poste en Provence est, à son détriment, muté à Bergues, petite ville du Nord. Sa famille refusant de l'accompagner, Philippe ira seul. A sa grande surprise, il découvre un endroit charmant, une équipe chaleureuse et des gens accueillants. Il se lie d'amitié avec Antoine, le facteur et le carillonneur du village, à la mère possessive et aux amours contrariées.
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Monty Python.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Monty Python - Sacré Graal</div>
+            <div class="description-film">Le roi Arthur et les Chevaliers de la Table Ronde partent à la recherche du Graal en chevauchant de bien étranges montures. Ils vont se retrouver dans un monde totalement insensé. La petite troupe va devoir passer une série d'épreuves en rencontrant un chevalier à trois têtes, des jouvencelles quelque peu entreprenantes et même un terrible lapin tueur.
+            </div>
+        </div>
+
+         <div class="film">
+            <img src="Image/Affiches Films Comiques/Astérix.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Astérix et Obélix - Mission Cléopatre</div>
+            <div class="description-film">Pour impressionner Jules César, Cléopâtre parie avec lui qu'elle parviendra à faire construire, en trois mois seulement, le plus beau palais qu'il ait jamais visité. Elle confie cette importante tâche à l'architecte Numérobis, qui se désespère: s'il échoue, il sera jeté aux crocodiles.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Eternal.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Eternal Sunshine of the Spotless Mind</div>
+            <div class="description-film">Joel et Clementine ne voient plus que les mauvais côtés de leur tumultueuse histoire d'amour, au point que celle-ci fait effacer de sa mémoire toute trace de cette relation. Effondré, Joel contacte l'inventeur du procédé Lacuna, le Dr. Mierzwiak, pour qu'il extirpe également de sa mémoire tout ce qui le rattachait à Clementine.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Botanique.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Arnaques, Crimes & Botanique</div>
+            <div class="description-film">Eddie, le fils du barman JD, est un génie des cartes. Ayant réuni, avec l'aide de ses amis Soap, Bacon et Tom, la somme de 100 000 £ comme droit d'entrée à la table du caïd Harry la Hache, il perd malheureusement tout à la suite d'une tricherie de Harry et de son bras droit, Barry le Baptiste.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Orange.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Orange Mécanique</div>
+            <div class="description-film">Réunis au Korova Milk-Bar, Alex et sa bande s'abreuvent de drogues avant de partir pour une virée ultraviolente. Après avoir battu à mort un clochard ivre, ils pénètrent dans une maison, violent la femme et blessent gravement le mari.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Zombieland.jpg " alt="Affiche du film" class="affiche">
+            <div class="titre-film">Bienvenue à Zombieland</div>
+            <div class="description-film">Suite à une mutation du virus de la vache folle, les humains sont transformés en zombies. Deux survivants que tout oppose, sillonnent les routes et affrontent les zombies qui grouillent aux quatre coins du pays.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Sans fin.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Un Jour Sans Fin</div>
+            <div class="description-film">Phil Connors, journaliste à la télévision et responsable de la météo part faire son reportage annuel dans la bourgade de Punxsutawney où l'on fête le Groundhog Day : Jour de la marmotte. Dans l'impossibilité de rentrer chez lui ensuite à Pittsburgh pour cause d'intempéries il se voit forcé de passer une nuit de plus dans cette ville perdue. Là-bas, il est condamné à revivre sans cesse la même journée.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Men In Black.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Men In Black</div>
+            <div class="description-film">Chargés de protéger la Terre de toute infraction extraterrestre et de réguler l'immigration intergalactique sur notre planète, les Men in black ou MIB opèrent dans le plus grand secret. Vêtus de costumes sombres et équipés des toutes dernières technologies, ils passent inaperçus aux yeux des humains dont ils effacent régulièrement la mémoire récente.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="liste-films">
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Mathilda.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Matilda</div>
+            <div class="description-film">Avec sa drôle de bouille et son naturel désarmant, Matilda est une irrésistible petite fille qui vit dans un monde beaucoup trop étroit pour elle.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Monty.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">The Full Monty</div>
+            <div class="description-film">Aujourd'hui, Sheffield, qui fut l'orgueil du Yorkshire et le joyau de l'Angleterre, est une ville sinistrée. Le chômage y règne en maître et les hommes désoeuvrés errent dans les rues en quête d'illusoires petits boulots. La venue de la troupe des Chippendales, qui, lors de leur spectacle, provoqua un véritable délire chez les spectatrices, va donner des idées a Gaz et ses copains.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Pie.jpg" alt="Affiche du film" class="affiche">
+            <div class="titre-film">American Pie</div>
+            <div class="description-film">L'année scolaire se termine au lycée de Great Falls. Désespéré depuis que ses parents l'ont surpris dans une situation plus que gênante devant un film X, Jim, élève de terminale, scelle un pacte avec sa bande de copains : finis les plaisirs solitaires, ils seront tous des hommes avant d'entrer à la fac. Il leur reste donc trois semaines pour utiliser toutes les techniques possibles de séduction.
+            </div>
+        </div>
+
+        <div class="film">
+            <img src="Image/Affiches Films Comiques/Mary.webp" alt="Affiche du film" class="affiche">
+            <div class="titre-film">Mary à Tout Prix</div>
+            <div class="description-film">Ted, le loser, décide de retrouver son amour de jeunesse, la splendide Mary. Il engage un détective privé, Pat Healy, pour la retrouver. Persuadé qu'il a affaire à un dégénéré, Healy file à Miami et retrouve Mary. Decidé à garder Mary pour lui, il raconte à Ted qu'elle est devenue grosse, qu'elle est paralytique et qu'elle a quatre enfants. Mais Tucker, un architecte, est également amoureux de Mary. Il va faire cause commune avec Healy pour se débarrasser de Ted.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+<footer class="footer">
+    <img src="Image/Capture d’écran 2024-11-13 à 18.00.32.png" width="100%" height="250px" alt="Réseaux">
+    <p>&copy; 2024 Nas Benas. Tous droits réservés.</p>
+</footer>
+
+</html>
